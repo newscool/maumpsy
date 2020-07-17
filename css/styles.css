@@ -791,6 +791,9 @@ header .util a:last-of-type {
     margin-bottom: 2rem;
     color: #555;
 }
+.post-write .body .textarea {
+    height: 200px;
+}
 
 .post-detail .bottom {
     display: flex;
@@ -930,7 +933,7 @@ header .util a:last-of-type {
 .comment-list .comment-body {
     font-size: 15px;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #777;
     text-align: justify;
 }
@@ -978,7 +981,7 @@ header .util a:last-of-type {
 .comment-list .reply-container {
     display: none;
     background-color: #FAFAFA;
-    padding: 15px 15px 20px 25px;
+    padding: 15px;
 }
 
 .comment-list .reply-container.is-active {

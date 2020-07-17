@@ -27,6 +27,12 @@ $(function () {
         return false;
     })
 
+    // 모바일 헤더: 이전페이지로 가기
+    $(".page-prev").click(function() {
+        history.back();
+        return false;
+    })
+
     // likes: 좋아요 버튼 클릭 액션
     $(".button.likes").click(function() {
         $(this).toggleClass("is-clicked");
