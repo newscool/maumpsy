@@ -76,6 +76,10 @@
         font-size: 1.2rem;
     }
 
+    .index header .page-prev {
+        visibility: hidden;
+    }
+
     header .page-prev {
         padding-right: 10px;
     }
