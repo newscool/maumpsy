@@ -49,6 +49,13 @@ $(function () {
         })
     }
 
+    if($(".upload-button").length) {
+        $(".upload-button").click(function() {
+            $("#upload-image-file").trigger("click");
+            return false;
+        })
+    }
+
     // footer: 관련 사이트 액션
     $(".related-site").click(function () {
         $(this).toggleClass("is-active");
