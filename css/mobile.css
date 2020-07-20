@@ -257,13 +257,9 @@
         display: none;
     }
 
-    .sub .image-test .container {
-        width: 100%;
-    }
-
     .top-bar {
         flex-direction: column;
-        margin: 2rem 0;
+        margin: 0 0 2rem 0;
     }
 
     .top-bar .buttons {
@@ -329,6 +325,11 @@
         padding: 20px;
     }
 
+    .sub .image-test .container,
+    .sub .maum-manual .container {
+        width: 100%;
+    }
+
     .main .slogan h1 {
         font-size: 1.4rem;
     }
@@ -383,11 +384,12 @@
     }
 
     .image-list+.buttons {
-        margin-top: 30px;
+        margin-top: 30px !important;
     }
 
-    .image-list+.buttons .button {
-        width: 100%;
+    .image-list+.buttons .button,
+    .maum-manual .buttons .button {
+        width: 100% !important;
     }
 
     .main .manual-list {
@@ -487,6 +489,79 @@
 
     .images.js-upload-image .upload-button p b {
         font-size: 1rem;
+    }
+
+    .sub .maum-manual .psy-check-list li {
+        width: auto;
+    }
+
+    .sub .maum-manual .psy-check-list li a {
+        padding: 0 7px;
+        height: 1.7rem;
+        font-size: 11px;
+    }
+
+    .sub .manual-list>li {
+        width: 100%;
+    }
+
+    .sub .manual-list>li a {
+        display: flex;
+    }
+
+    .sub .manual-list>li .thumbnail {
+        flex-shrink: 0;
+        width: 65px;
+        height: 65px;
+        margin-right: 12px;
+        border-radius: 5px;
+    }
+
+    .sub .manual-content {
+        display: grid;
+    }
+
+    .sub .manual-content>.keyword {
+        margin-top: 0;
+        font-size: 11px;
+        font-weight: normal;
+    }
+
+    .sub .manual-content>.subject {
+        overflow: hidden;
+        line-height: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .sub .manual-content>.info {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .sub .post-detail .header {
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+
+    .sub .post-detail .header .keyword {
+        font-size: 11px;
+    }
+
+    .sub .post-detail .header h1 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .sub .post-detail .header .date {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .sub .post-detail .header .likes {
+        font-size: 12px;
+        padding: 5px 8px;
     }
 
     .fullwidth-banner .container {
