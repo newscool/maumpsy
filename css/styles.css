@@ -359,13 +359,11 @@ header .util a:last-of-type {
     margin-bottom: 100px;
 }
 
-.sub .image-test,
-.sub .maum-manual {
+.sub>section {
     margin-bottom: 60px;
 }
 
-.sub .image-test .container,
-.sub .maum-manual .container {
+.sub .container {
     width: 800px;
 }
 
@@ -1027,11 +1025,29 @@ header .util a:last-of-type {
     margin-top: 3px;
     word-break: keep-all;
 }
+.sub .is-consulting .post-content>.subject {
+    margin-top: 10px;
+}
+.sub .is-consulting .thumbnail {
+    position: relative;
+}
+.sub .is-consulting .thumbnail .running-time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    line-height: 1;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
 
 .sub .post-content>.info {
     margin-top: 10px;
     display: flex;
-    font-size: 13px;
+    font-size: 12px;
     color: #999;
 }
 
@@ -1039,8 +1055,9 @@ header .util a:last-of-type {
     margin-right: auto;
 }
 
-.sub .post-content>.info .read {
-    margin-right: 15px;
+.sub .post-content>.info .read,
+.sub .post-content>.info .comment {
+    margin-right: 10px;
 }
 
 .sub .post-content>.info span b {
@@ -1053,6 +1070,27 @@ header .util a:last-of-type {
     margin-right: 3px;
 }
 
+/* consulting */
+.sub .container > .buttons {
+    margin-top: 30px;
+}
+
+.sub .consulting .textarea {
+    height: 350px;
+}
+
+
+.message {
+    padding: 1.5rem;
+    font-size: 13px;
+}
+.message ul {
+    margin-left: 1rem;
+}
+.message li {
+    list-style: disc;
+    margin-bottom: .3rem;
+}
 
 /* footer */
 .footer {

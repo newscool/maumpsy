@@ -325,8 +325,7 @@
         padding: 20px;
     }
 
-    .sub .image-test .container,
-    .sub .maum-manual .container {
+    .sub .container {
         width: 100%;
     }
 
@@ -388,6 +387,7 @@
     }
 
     .image-list+.buttons .button,
+    .consulting .container>.buttons .button,
     .maum-manual .buttons .button {
         width: 100% !important;
     }
@@ -518,7 +518,7 @@
     }
 
     .sub .post-content {
-        display: grid;
+        width: calc(100% - 77px);
     }
 
     .sub .post-content>.keyword {
@@ -555,10 +555,12 @@
         font-size: 1.1rem;
         font-weight: 600;
     }
+
     .sub .post-detail .header .date {
         margin-top: 10px;
         font-size: 13px;
     }
+
     .sub .post-detail .header .likes {
         font-size: 12px;
         padding: 5px 8px;
@@ -607,6 +609,25 @@
         padding: 8px 10px;
         line-height: 1;
         border-radius: 3px;
+    }
+
+    .is-consulting .post-content {
+        width: calc(100% - 97px) !important;
+    }
+    .is-consulting .thumbnail {
+        width: 85px !important;
+    }
+    .is-consulting .running-time {
+        bottom: 5px !important;
+        right: 5px !important;
+        font-size: 11px !important;
+    }
+    .is-consulting .info {
+        margin-top: 10px !important;
+    }
+    
+    .button.is-save {
+        width: 100%;
     }
 
     .footer .foot-menu {
