@@ -110,12 +110,11 @@ $(function () {
     })
 
     // 서브: 마음설명서 리스트 키워트 세팅
-    if ($(".sub .manual-list").length) {
+    if ($(".sub .maum-manual").length) {
         $("li.keyword").each(function () {
             var _index = $(this).parents("li").attr("data-keyword");
             $(this).css("color", keywordColors[_index]);
         })
-
     }
 
     // footer: 관련 사이트 액션

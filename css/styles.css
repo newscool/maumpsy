@@ -453,21 +453,21 @@ header .util a:last-of-type {
     margin-bottom: 100px;
 }
 
-.main .manual-list {
+.main .post-list {
     display: flex;
 }
 
-.main .manual-list li {
+.main .post-list li {
     position: relative;
     width: 32%;
     margin-right: 2.5%;
 }
 
-.main .manual-list li:last-of-type {
+.main .post-list li:last-of-type {
     margin-right: 0;
 }
 
-.main .manual-list li .photo {
+.main .post-list li .photo {
     position: relative;
     width: 100%;
     padding-top: 56%;
@@ -475,13 +475,13 @@ header .util a:last-of-type {
     border-radius: 10px;
 }
 
-.main .manual-list li img {
+.main .post-list li img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.main .manual-list li .tag {
+.main .post-list li .tag {
     position: absolute;
     top: 10px;
     left: -10px;
@@ -490,43 +490,43 @@ header .util a:last-of-type {
     z-index: 1;
 }
 
-.main .manual-list li:nth-of-type(1) .tag {
+.main .post-list li:nth-of-type(1) .tag {
     background-color: #25D0AF;
 }
 
-.main .manual-list li:nth-of-type(2) .tag {
+.main .post-list li:nth-of-type(2) .tag {
     background-color: #EF942C;
 }
 
-.main .manual-list li:nth-of-type(3) .tag {
+.main .post-list li:nth-of-type(3) .tag {
     background-color: #37A2E6;
 }
 
-.main .manual-list li dl {
+.main .post-list li dl {
     padding: .8rem;
 }
 
-.main .manual-list li dt {
+.main .post-list li dt {
     font-size: 1.5rem;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
-.main .manual-list li dd {
+.main .post-list li dd {
     color: #999;
 }
 
-.main .manual-list li dd.info {
+.main .post-list li dd.info {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.main .manual-list li dd.info .like i {
+.main .post-list li dd.info .like i {
     color: #F26969;
 }
 
-.main .manual-list li dd.info .like span {
+.main .post-list li dd.info .like span {
     color: #000;
 }
 
@@ -969,7 +969,7 @@ header .util a:last-of-type {
     margin-top: 30px;
 }
 
-.sub .maum-manual .buttons .button {
+.sub .maum-manual .post-list + .buttons .button {
     width: 25%;
 }
 
@@ -992,63 +992,63 @@ header .util a:last-of-type {
     border-radius: 5px;
 }
 
-.sub .manual-list {
+.sub .post-list {
     display: flex;
     flex-wrap: wrap;
     margin: -1rem;
 }
 
-.sub .manual-list>li {
+.sub .post-list>li {
     width: 33.3%;
     padding: 1rem;
 }
 
-.sub .manual-list>li .thumbnail {
+.sub .post-list>li .thumbnail {
     position: relative;
     height: 160px;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.sub .manual-list>li .thumbnail img {
+.sub .post-list>li .thumbnail img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
 }
 
-.sub .manual-content>.keyword {
+.sub .post-content>.keyword {
     font-weight: 600;
     margin-top: .6rem;
     font-size: .8rem;
 }
 
-.sub .manual-content>.subject {
+.sub .post-content>.subject {
     margin-top: 3px;
     word-break: keep-all;
 }
 
-.sub .manual-content>.info {
+.sub .post-content>.info {
     margin-top: 10px;
     display: flex;
     font-size: 13px;
     color: #999;
 }
 
-.sub .manual-content>.info .date {
+.sub .post-content>.info .date {
     margin-right: auto;
 }
 
-.sub .manual-content>.info .read {
+.sub .post-content>.info .read {
     margin-right: 15px;
 }
 
-.sub .manual-content>.info span b {
+.sub .post-content>.info span b {
     color: #333;
     font-weight: normal;
 }
 
-.sub .manual-content>.info span i {
+.sub .post-content>.info span i {
     color: #f14668;
     margin-right: 3px;
 }

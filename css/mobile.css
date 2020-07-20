@@ -392,33 +392,33 @@
         width: 100% !important;
     }
 
-    .main .manual-list {
+    .main .post-list {
         display: block;
     }
 
-    .main .manual-list li {
+    .main .post-list li {
         width: 100%;
         margin-bottom: 30px;
     }
 
-    .main .manual-list li:last-of-type {
+    .main .post-list li:last-of-type {
         margin-bottom: 0;
     }
 
-    .main .manual-list li dl {
+    .main .post-list li dl {
         padding-bottom: 0;
     }
 
-    .main .manual-list li dt {
+    .main .post-list li dt {
         font-size: 1rem;
     }
 
-    .main .manual-list li dd {
+    .main .post-list li dd {
         font-size: .8rem;
         line-height: 1.4;
     }
 
-    .main .manual-list li .tag {
+    .main .post-list li .tag {
         font-size: .7rem;
     }
 
@@ -501,15 +501,15 @@
         font-size: 11px;
     }
 
-    .sub .manual-list>li {
+    .sub .post-list>li {
         width: 100%;
     }
 
-    .sub .manual-list>li a {
+    .sub .post-list>li a {
         display: flex;
     }
 
-    .sub .manual-list>li .thumbnail {
+    .sub .post-list>li .thumbnail {
         flex-shrink: 0;
         width: 65px;
         height: 65px;
@@ -517,17 +517,17 @@
         border-radius: 5px;
     }
 
-    .sub .manual-content {
+    .sub .post-content {
         display: grid;
     }
 
-    .sub .manual-content>.keyword {
+    .sub .post-content>.keyword {
         margin-top: 0;
         font-size: 11px;
         font-weight: normal;
     }
 
-    .sub .manual-content>.subject {
+    .sub .post-content>.subject {
         overflow: hidden;
         line-height: 1;
         text-overflow: ellipsis;
@@ -537,7 +537,7 @@
         margin-top: 0;
     }
 
-    .sub .manual-content>.info {
+    .sub .post-content>.info {
         margin-top: 5px;
         font-size: 12px;
     }
