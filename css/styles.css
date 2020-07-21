@@ -295,7 +295,7 @@ header .util a:last-of-type {
 
 .sub .main-title {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: #f9f9f9;
     padding: 15px 20px;
     border-radius: 10px;
 }
@@ -384,6 +384,9 @@ header .util a:last-of-type {
 
 .image-test .image-list li:nth-of-type(4n) {
     margin-right: 0;
+}
+.image-test .image-list li:nth-last-child(-n+4) {
+    margin-bottom: 0;
 }
 
 .image-test .image-list li a {
@@ -651,7 +654,7 @@ header .util a:last-of-type {
 .top-bar .description {
     font-size: 1.3rem;
     font-family: 'Nanum Myeongjo', serif;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     border-left: 3px solid #eee;
     padding-left: 1rem;
     color: #000;
@@ -714,9 +717,12 @@ header .util a:last-of-type {
     color: #999;
     font-size: 13px;
 }
+.post-detail .bottom .info dd:first-of-type {
+    color: #666;
+}
 
 .post-detail .likes {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .post-detail .likes i,
@@ -748,10 +754,6 @@ header .util a:last-of-type {
     bottom: 10px;
     left: 15px;
     font-size: 13px;
-}
-
-.sub .image-test .container>.buttons {
-    margin-top: 10px;
 }
 
 .sub .image-test .container>.buttons .button {
@@ -967,7 +969,7 @@ header .util a:last-of-type {
     margin-top: 30px;
 }
 
-.sub .maum-manual .post-list + .buttons .button {
+.sub .post-list + .buttons .button {
     width: 25%;
 }
 
@@ -1077,6 +1079,47 @@ header .util a:last-of-type {
 
 .sub .consulting .textarea {
     height: 350px;
+}
+
+/* todak */
+.sub .is-todak a {
+    display: block;
+    background-color: #f8f6f3;
+    border-radius: 10px;
+    padding: 20px;
+    height: 270px;
+}
+.sub .is-todak .post-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sub .is-todak .info {
+    flex-wrap: wrap;
+}
+.sub .is-todak .date {
+    width: 100%;
+}
+.sub .is-todak .subject {
+    margin-top: 0;
+    font-family: 'Nanum Myeongjo', serif;
+    word-break: break-all;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    height: 170px;
+    overflow: hidden;
+}
+
+.todak .post-detail .bottom .info {
+    display: flex;
+}
+.todak .post-detail .bottom .info dd {
+    margin-right: 15px;
+}
+.todak .post-detail .bottom .info dd b {
+    color: #333;
 }
 
 

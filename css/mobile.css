@@ -534,12 +534,12 @@
         white-space: nowrap;
         word-wrap: normal;
         font-size: 15px;
-        margin-top: 0;
+        margin-top: 3px;
     }
 
     .sub .post-content>.info {
-        margin-top: 5px;
-        font-size: 12px;
+        margin-top: 10px;
+        font-size: 13px;
     }
 
     .sub .post-detail .header {
@@ -614,18 +614,56 @@
     .is-consulting .post-content {
         width: calc(100% - 97px) !important;
     }
+
     .is-consulting .thumbnail {
         width: 85px !important;
     }
+
     .is-consulting .running-time {
         bottom: 5px !important;
         right: 5px !important;
         font-size: 11px !important;
     }
+
     .is-consulting .info {
         margin-top: 10px !important;
     }
-    
+
+    .sub .is-todak>li {
+        padding-bottom: 0;
+    }
+
+    .sub .is-todak a {
+        height: auto;
+    }
+
+    .sub .is-todak .post-content {
+        width: 100%;
+    }
+
+    .sub .is-todak .subject {
+        text-overflow: unset;
+        width: 100%;
+        white-space: normal;
+        line-height: 1.4;
+        height: auto;
+        max-height: 105px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .sub .is-todak .info {
+        margin-top: 0;
+    }
+
+    .sub .todak .post-detail .info {
+        flex-wrap: wrap;
+    }
+    .sub .todak .post-detail .info dd:first-of-type {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
     .button.is-save {
         width: 100%;
     }
