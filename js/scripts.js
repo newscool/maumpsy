@@ -141,7 +141,7 @@ $(window).scroll(function () {
     var topScroll = $(document).scrollTop();
 
     // 스크롤 150이상 시 메뉴바 고정
-    if (topScroll >= 150) {
+    if (topScroll >= 250) {
         $("header").addClass("is-fixed");
     } else {
         $("header").removeClass("is-fixed");

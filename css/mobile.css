@@ -388,7 +388,8 @@
 
     .image-list+.buttons .button,
     .consulting .container>.buttons .button,
-    .maum-manual .buttons .button {
+    .maum-manual .buttons .button,
+    .todak .container>.buttons .button {
         width: 100% !important;
     }
 
@@ -630,7 +631,8 @@
     }
 
     .sub .is-todak>li {
-        padding-bottom: 0;
+        padding: .5rem 1rem;
+        margin-bottom: 0;
     }
 
     .sub .is-todak a {
@@ -659,12 +661,13 @@
     .sub .todak .post-detail .info {
         flex-wrap: wrap;
     }
+
     .sub .todak .post-detail .info dd:first-of-type {
         width: 100%;
         margin-bottom: 3px;
     }
 
-    .button.is-save {
+    section:not(.image-test) .button.is-save {
         width: 100%;
     }
 

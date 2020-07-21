@@ -663,7 +663,7 @@ header .util a:last-of-type {
 /* post */
 .post-detail,
 .post-write {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .post-detail .images,
@@ -995,12 +995,13 @@ header .util a:last-of-type {
 .sub .post-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem;
+    margin: 0 -1rem;
 }
 
 .sub .post-list>li {
     width: 33.3%;
-    padding: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
 }
 
 .sub .post-list>li .thumbnail {
@@ -1124,8 +1125,8 @@ header .util a:last-of-type {
 
 
 .message {
-    padding: 1.5rem;
-    font-size: 13px;
+    padding: 1.2rem;
+    font-size: 12px;
 }
 .message ul {
     margin-left: 1rem;
@@ -1133,6 +1134,9 @@ header .util a:last-of-type {
 .message li {
     list-style: disc;
     margin-bottom: .3rem;
+}
+.message li:last-of-type {
+    margin-bottom: 0;
 }
 
 /* footer */
