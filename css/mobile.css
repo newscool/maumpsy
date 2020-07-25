@@ -635,6 +635,19 @@
         margin-top: 10px !important;
     }
 
+    .sub .consulting .subject,
+    .sub .tv .subject {
+        margin-top: 0 !important;
+    }
+    .sub .consulting .info,
+    .sub .tv .info {
+        margin-top: 0 !important;
+    }
+    .sub .consulting .post-list li:last-of-type,
+    .sub .tv .post-list li:last-of-type {
+        margin-bottom: 0;
+    }
+
     .sub .is-todak>li {
         padding: .5rem 1rem;
         margin-bottom: 0;

@@ -241,7 +241,7 @@ header .util a:last-of-type {
 /* main-title */
 .main-title {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .main-title img {
@@ -681,6 +681,20 @@ header .util a:last-of-type {
     border-radius: 20px;
 }
 
+.post-detail .youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 2rem;
+}
+.post-detail .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .post-detail .header .subject .info {
     display: flex;
     align-items: center;
@@ -1056,6 +1070,10 @@ header .util a:last-of-type {
     margin-top: 3px;
     word-break: keep-all;
 }
+.sub .post-content>.tags {
+    color: #48c774;
+    font-size: .8rem;
+}
 
 .sub .is-consulting .post-content>.subject {
     margin-top: 10px;
@@ -1205,7 +1223,12 @@ header .util a:last-of-type {
     border-radius: 5px;
     margin-bottom: 5px;
     border: 1px solid #ccc;
-    margin-top: 10px;
+}
+
+/* tv */
+.sub .tv .tags {
+    margin-bottom: 0;
+    color: #48c774;
 }
 
 /* tab */
