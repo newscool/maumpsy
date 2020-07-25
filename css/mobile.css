@@ -45,7 +45,10 @@
         padding: 15px;
     }
 
-    header.is-fixed .container {
+    body.is-fixed {
+        margin-top: 54px;
+    }
+    body.is-fixed header .container {
         position: fixed;
         top: 0;
         background-color: #fff;
@@ -528,7 +531,9 @@
         font-weight: normal;
     }
 
-    .sub .post-content>.subject {
+    .sub .post-content>.subject span {
+        display: inline-block;
+        width: 100%;
         overflow: hidden;
         line-height: 1;
         text-overflow: ellipsis;
@@ -669,6 +674,39 @@
 
     section:not(.image-test) .button.is-save {
         width: 100%;
+    }
+
+    .sub .salon .post-list>li {
+        padding: 0;
+    }
+
+    .sub .salon .post-content {
+        width: 100%;
+    }
+
+    .sub .salon .post-content>.info {
+        font-size: 12px;
+    }
+    .sub .salon .post-content .subject {
+        position: relative;
+    }
+    .sub .salon .post-content .subject span {
+        padding-right: 25px;
+    }
+    .sub .salon .post-content .subject i {
+        position: absolute;
+        right: 0;
+        top: 3px;
+    }
+
+    .sub .post-detail .header .info {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .tabs li {
+        flex-grow: 1;
+        flex-shrink: 0;
     }
 
     .footer .foot-menu {

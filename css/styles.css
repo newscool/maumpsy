@@ -385,6 +385,7 @@ header .util a:last-of-type {
 .image-test .image-list li:nth-of-type(4n) {
     margin-right: 0;
 }
+
 .image-test .image-list li:nth-last-child(-n+4) {
     margin-bottom: 0;
 }
@@ -680,20 +681,40 @@ header .util a:last-of-type {
     border-radius: 20px;
 }
 
+.post-detail .header .subject .info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.post-detail .header .subject .info div {
+    color: #999;
+    margin: 0;
+    margin-right: 15px;
+    line-height: 1;
+}
+.post-detail .header .subject .info div b {
+    color: #333;
+}
+
 .post-detail .body {
     margin-bottom: 2rem;
     color: #555;
 }
+
 .post-detail .body p {
     margin: 1rem 0;
     line-height: 1.7;
 }
+
 .post-detail .body p:first-of-type {
     margin-top: 0;
 }
+
 .post-detail .body p:last-of-type {
     margin-bottom: 0;
 }
+
 .post-detail .body .images {
     margin: 2rem 0;
 }
@@ -717,6 +738,7 @@ header .util a:last-of-type {
     color: #999;
     font-size: 13px;
 }
+
 .post-detail .bottom .info dd:first-of-type {
     color: #666;
 }
@@ -768,6 +790,7 @@ header .util a:last-of-type {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
+
 .sub .post-detail .header .keyword {
     display: inline-block;
     align-items: center;
@@ -775,17 +798,21 @@ header .util a:last-of-type {
     padding: .2rem .8rem;
     border-radius: 5px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
+
 .sub .post-detail .header h1 {
     line-height: 1.5;
     font-size: 1.5rem;
     color: #000;
 }
+
 .sub .post-detail .header .date {
     line-height: 1;
     margin-top: 5px;
     color: #999;
 }
+
 .sub .post-detail .share {
     display: flex;
     justify-content: center;
@@ -798,6 +825,7 @@ header .util a:last-of-type {
     overflow: hidden;
     margin: 0 .2rem;
 }
+
 .sub .post-detail .share img {
     display: block;
 }
@@ -969,7 +997,7 @@ header .util a:last-of-type {
     margin-top: 30px;
 }
 
-.sub .post-list + .buttons .button {
+.sub .post-list+.buttons .button {
     width: 25%;
 }
 
@@ -1028,12 +1056,15 @@ header .util a:last-of-type {
     margin-top: 3px;
     word-break: keep-all;
 }
+
 .sub .is-consulting .post-content>.subject {
     margin-top: 10px;
 }
+
 .sub .is-consulting .thumbnail {
     position: relative;
 }
+
 .sub .is-consulting .thumbnail .running-time {
     position: absolute;
     bottom: 10px;
@@ -1059,8 +1090,9 @@ header .util a:last-of-type {
 }
 
 .sub .post-content>.info .read,
+.sub .post-content>.info .author,
 .sub .post-content>.info .comment {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .sub .post-content>.info span b {
@@ -1073,8 +1105,13 @@ header .util a:last-of-type {
     margin-right: 3px;
 }
 
+.sub .post-content>.info .author {
+    color: #333;
+}
+
+
 /* consulting */
-.sub .container > .buttons {
+.sub .container>.buttons {
     margin-top: 30px;
 }
 
@@ -1090,18 +1127,22 @@ header .util a:last-of-type {
     padding: 20px;
     height: 270px;
 }
+
 .sub .is-todak .post-content {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .sub .is-todak .info {
     flex-wrap: wrap;
 }
+
 .sub .is-todak .date {
     width: 100%;
 }
+
 .sub .is-todak .subject {
     margin-top: 0;
     font-family: 'Nanum Myeongjo', serif;
@@ -1116,25 +1157,85 @@ header .util a:last-of-type {
 .todak .post-detail .bottom .info {
     display: flex;
 }
+
 .todak .post-detail .bottom .info dd {
     margin-right: 15px;
 }
+
 .todak .post-detail .bottom .info dd b {
     color: #333;
 }
 
+/* salon */
+.sub .salon .post-list {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
 
+.sub .salon .post-list>li {
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+}
+
+.sub .salon .post-list>li a {
+    display: block;
+    padding: 1rem 0;
+}
+
+.sub .salon .post-content>.category {
+    font-size: 12px;
+    color: #999;
+}
+
+.sub .salon .post-content>.subject i {
+    margin-left: 5px;
+    color: #aaa;
+}
+
+.sub .salon .post-content>.info {
+    margin-top: 5px;
+}
+
+.sub .salon .post-detail .category {
+    display: inline-block;
+    font-size: 13px;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* tab */
+
+.sub .tabs li a {
+    font-size: .8rem;
+}
+
+.tabs.is-toggle li.is-active a {
+    background-color: #444;
+    border-color: #444;
+}
+
+
+
+/* message */
 .message {
     padding: 1.2rem;
     font-size: 12px;
 }
+
 .message ul {
     margin-left: 1rem;
 }
+
 .message li {
     list-style: disc;
     margin-bottom: .3rem;
 }
+
 .message li:last-of-type {
     margin-bottom: 0;
 }
@@ -1346,9 +1447,11 @@ footer .go-top.is-active {
     text-align: center;
     font-size: 14px;
 }
+
 .modal-content .buttons {
     margin-top: 1rem;
 }
+
 .modal.is-small .modal-content {
     width: 300px;
 }

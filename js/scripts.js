@@ -140,14 +140,14 @@ $(function () {
 $(window).scroll(function () {
     var topScroll = $(document).scrollTop();
 
-    // 스크롤 150이상 시 메뉴바 고정
-    if (topScroll >= 250) {
-        $("header").addClass("is-fixed");
+    // 스크롤 100이상 시 메뉴바 고정
+    if (topScroll >= 100) {
+        $("body").addClass("is-fixed");
     } else {
-        $("header").removeClass("is-fixed");
+        $("body").removeClass("is-fixed");
     }
 
-    // 스크롤 300이상 시 최상단 이동 버튼 생성
+    // 스크롤 500이상 시 최상단 이동 버튼 생성
     if (topScroll >= 500) {
         $(".go-top").addClass("is-active");
     } else {
