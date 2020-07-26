@@ -1172,15 +1172,18 @@ header .util a:last-of-type {
     overflow: hidden;
 }
 
-.todak .post-detail .bottom .info {
+.todak .post-detail .bottom .info,
+.phrase .post-detail .bottom .info {
     display: flex;
 }
 
-.todak .post-detail .bottom .info dd {
+.todak .post-detail .bottom .info dd,
+.phrase .post-detail .bottom .info dd {
     margin-right: 15px;
 }
 
-.todak .post-detail .bottom .info dd b {
+.todak .post-detail .bottom .info dd b,
+.phrase .post-detail .bottom .info dd b {
     color: #333;
 }
 
@@ -1229,6 +1232,56 @@ header .util a:last-of-type {
 .sub .tv .tags {
     margin-bottom: 0;
     color: #48c774;
+}
+
+/* phrase */
+.sub .phrase .post-list {
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+.sub .phrase .post-list>li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+.sub .phrase .post-list>li a {
+    display: block;
+    padding: .6rem 0;
+}
+.sub .phrase .post-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub .phrase .post-content>.info {
+    margin: 0;
+}
+.sub .phrase .post-detail .body {
+    text-align: center;
+    margin: 70px 0;
+}
+.sub .phrase .post-detail .phrase-body {
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: -1px;
+    font-size: 1.8rem;
+    word-break: keep-all;
+    color: #000;
+    width: 80%;
+    margin: 0 auto;
+}
+.sub .phrase .post-detail .phrase-author {
+    font-style: italic;
+    margin-top: 10px;
+    color: #999;
+}
+.sub .phrase .post-detail .phrase-author::before,
+.sub .phrase .post-detail .phrase-author::after {
+    display: inline-block;
+    content: "-";
+    margin: 0 5px;
+}
+.sub .phrase .post-detail .share {
+    margin: 20px 0;
 }
 
 /* tab */

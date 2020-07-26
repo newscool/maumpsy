@@ -271,7 +271,7 @@
     }
 
     .top-bar .description {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .main .swiper-container {
@@ -622,7 +622,7 @@
     }
 
     .is-consulting .thumbnail {
-        width: 85px !important;
+        width: 80px !important;
     }
 
     .is-consulting .running-time {
@@ -642,6 +642,12 @@
     .sub .consulting .info,
     .sub .tv .info {
         margin-top: 0 !important;
+    }
+    .sub .tv .info {
+        font-size: 11px;
+    }
+    .sub .tv .tags {
+        margin-bottom: 5px;
     }
     .sub .consulting .post-list li:last-of-type,
     .sub .tv .post-list li:last-of-type {
@@ -715,6 +721,26 @@
     .sub .post-detail .header .info {
         margin-top: 10px;
         font-size: 13px;
+    }
+
+    .sub .phrase .post-list>li {
+        padding: 0;
+    }
+    .sub .phrase .post-list>li a {
+        padding: .9rem 0;
+    }
+    .sub .phrase .post-content {
+        width: 100%;
+    }
+    .sub .phrase .post-content .subject {
+        margin: 0;
+        font-size: .9rem;
+    }
+    .sub .phrase .post-content>.info {
+        font-size: 12px;
+    }
+    .sub .phrase .post-detail .phrase-body {
+        font-size: 1.6rem;
     }
 
     .tabs li {
