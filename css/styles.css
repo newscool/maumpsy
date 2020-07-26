@@ -1305,6 +1305,13 @@ header .util a:last-of-type {
     width: 66px;
     text-align: center;
 }
+.sub .diary .checkbox {
+    display: flex;
+    align-items: center;
+}
+.sub .diary .checkbox input {
+    margin-right: 5px;
+}
 
 /* tab */
 
