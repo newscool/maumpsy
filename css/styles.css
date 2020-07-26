@@ -1235,25 +1235,30 @@ header .util a:last-of-type {
 }
 
 /* phrase */
-.sub .phrase .post-list {
+.sub .phrase .post-list,
+.sub .diary .post-list {
     margin: 0;
     border-top: 1px solid #eee;
 }
-.sub .phrase .post-list>li {
+.sub .phrase .post-list>li,
+.sub .diary .post-list>li {
     width: 100%;
     border-bottom: 1px solid #eee;
     margin: 0;
 }
-.sub .phrase .post-list>li a {
+.sub .phrase .post-list>li a,
+.sub .diary .post-list>li a {
     display: block;
     padding: .6rem 0;
 }
-.sub .phrase .post-content {
+.sub .phrase .post-content,
+.sub .diary .post-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sub .phrase .post-content>.info {
+.sub .phrase .post-content>.info,
+.sub .diary .post-content>.info {
     margin: 0;
 }
 .sub .phrase .post-detail .body {
@@ -1282,6 +1287,23 @@ header .util a:last-of-type {
 }
 .sub .phrase .post-detail .share {
     margin: 20px 0;
+}
+
+/* diary */
+.sub .diary .post-content>.subject {
+    margin: 0;
+}
+.sub .diary .post-content>.subject .date {
+    display: inline-block;
+    width: 80px;
+    color: #999;
+}
+.sub .diary .post-content>.subject i {
+    color: #ccc;
+}
+.sub .diary .post-content>.info .date {
+    width: 66px;
+    text-align: center;
 }
 
 /* tab */

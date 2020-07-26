@@ -531,7 +531,7 @@
         font-weight: normal;
     }
 
-    .sub .post-content>.subject span {
+    .sub .post-content>.subject span:not(.date) {
         display: inline-block;
         width: 100%;
         overflow: hidden;
@@ -723,24 +723,59 @@
         font-size: 13px;
     }
 
-    .sub .phrase .post-list>li {
+    .sub .phrase .post-list>li,
+    .sub .diary .post-list>li {
         padding: 0;
     }
-    .sub .phrase .post-list>li a {
+    .sub .phrase .post-list>li a,
+    .sub .diary .post-list>li a {
         padding: .9rem 0;
     }
-    .sub .phrase .post-content {
+    .sub .phrase .post-content,
+    .sub .diary .post-content {
         width: 100%;
     }
-    .sub .phrase .post-content .subject {
+    .sub .phrase .post-content .subject,
+    .sub .diary .post-content .subject {
         margin: 0;
         font-size: .9rem;
     }
-    .sub .phrase .post-content>.info {
+    .sub .phrase .post-content>.info,
+    .sub .diary .post-content>.info {
         font-size: 12px;
     }
     .sub .phrase .post-detail .phrase-body {
         font-size: 1.6rem;
+    }
+
+    .sub .diary .post-list .post-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sub .diary .post-list .post-content .subject {
+        position: relative;
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .sub .diary .post-list .post-content .subject .text {
+        padding-right: 20px;
+        color: #000;
+    }
+    .sub .diary .post-list .post-content .subject i {
+        position: absolute;
+        right: 0;
+    }
+    .sub .diary .post-list .post-content .subject .date {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .sub .diary .post-list .post-content .subject span {
+        margin: 0;
+    }
+    .sub .diary .post-content>.info .date {
+        width: auto;
     }
 
     .tabs li {
