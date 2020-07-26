@@ -25,7 +25,7 @@
                 <a href="" class="is-hidden-mobile">
                     <img src="./img/logo.png" alt="마음사이">
                 </a>
-                <div class="mobile-current-title is-hidden-tablet">마음공감</div>
+                <div class="mobile-current-title is-hidden-tablet">힐링음악</div>
             </div>
             <nav class="menu is-hidden-mobile">
                 <ul class="main-menu">
@@ -294,13 +294,13 @@
 
     <main class="sub">
 
-        <!-- 마음공감 -->
-        <section class="phrase">
+        <!-- 힐링음악 -->
+        <section class="music">
             <div class="container">
                 <div class="main-title">
-                    <img src="./img/icon_title_8.png" alt="마음공감">
+                    <img src="./img/icon_title_10.png" alt="힐링음악">
                     <h2>
-                        <span>마음공감</span>
+                        <span>힐링음악</span>
                     </h2>
                     <ul class="breadcrumb">
                         <li>
@@ -310,18 +310,29 @@
                             <a href="">오후4시, 잠깐의 여유</a>
                         </li>
                         <li class="current">
-                            <span>마음공감</span>
+                            <span>힐링음악</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="post-detail">
-                    
-                    <div class="body">
-                        <div class="phrase-body">대부분의 사람은 마음먹은 만큼 행복하다.</div>
-                        <div class="phrase-author">에이브러햄 링컨</div>
+                    <div class="header">
+                        <div class="subject">
+                            <h1>#2 If you go – by 허진</h1>
+                            <div class="date">2020.07.01</div>
+                        </div>
+                        <a class="button likes">
+                            <i class="fas fa-heart"></i>
+                            <span class="like-count">1,209</span>
+                        </a>
                     </div>
-
+                    <div class="body">
+                        <!-- 오디오북 import -->
+                        <iframe
+                            src="https://player.audiop.naver.com/player?cpId=audioclip&cpMetaId=CH_4599_EP_14&partnerKey=f8ae3b53&partnerId=audioclip&extra="
+                            title="오디오 플레이어" width="100%" height="180px" frameborder="0" scrolling="no"></iframe>
+                        <!-- 오디오북 import end -->
+                    </div>
                     <div class="share">
                         <a href="javascript:;" class="btn-shareKakao">
                             <img src="./img/icon_kakao.png" alt="카카오톡">
@@ -331,18 +342,6 @@
                         </a>
                         <a href="javascript:;" class="btn-shareCopyUrl" data-clipboard-text="">
                             <img src="./img/icon_url.png" alt="url 주소 복사">
-                        </a>
-                    </div>
-
-                    <div class="bottom">
-                        <dl class="info">
-                            <dd>2020.05.12</dd>
-                            <dd>읽음 <b>231</b></dd>
-                            <dd>댓글 <b>482</b></dd>
-                        </dl>
-                        <a class="button likes">
-                            <i class="fas fa-heart"></i>
-                            <span class="like-count">4</span>
                         </a>
                     </div>
 
@@ -508,8 +507,10 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
+
             </div>
         </section>
 
@@ -595,6 +596,7 @@
         <div class="go-top"></div>
     </footer>
 
+
     <!-- modal: 주소복사 -->
     <div class="modal modal-copyUrl is-small">
         <div class="modal-background"></div>
@@ -615,7 +617,7 @@
     <script src="./js/clipboard.min.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
-        $(function () {
+        $(function() {
 
             // 현재 url 변수 저장
             var _currentPageUrl = location.href;
@@ -623,10 +625,10 @@
 
             // url복사 버튼 클릭 시 클립보드에 복사
             var copyUrlButton = new ClipboardJS('.btn-shareCopyUrl');
-            copyUrlButton.on('success', function (e) {
+            copyUrlButton.on('success', function(e) {
                 $(".modal-copyUrl").addClass("is-active");
             });
-            copyUrlButton.on('error', function (e) {
+            copyUrlButton.on('error', function(e) {
                 console.log(e);
                 alert('복사가 실패하였습니다');
             });

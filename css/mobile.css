@@ -778,6 +778,23 @@
         width: auto;
     }
 
+    .sub .music .post-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sub .music .post-content>.subject {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .sub .music .post-content>.info {
+        margin-top: 0 !important;
+        font-size: 12px;
+    }
+    .sub .music .post-list li:last-of-type {
+        margin-bottom: 0;
+    }
+
     .tabs li {
         flex-grow: 1;
         flex-shrink: 0;
