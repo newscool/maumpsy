@@ -520,6 +520,12 @@
         margin-right: 12px;
         border-radius: 5px;
     }
+    .sub .post-list .info span:not(.date) {
+        margin-right: 10px !important;
+    }
+    .sub .post-list .info span:last-of-type {
+        margin-right: 0 !important;
+    }
 
     .sub .post-content {
         width: calc(100% - 77px);
@@ -545,7 +551,7 @@
 
     .sub .post-content>.info {
         margin-top: 10px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .sub .post-detail .header {

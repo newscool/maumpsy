@@ -1204,6 +1204,9 @@ header .util a:last-of-type {
     display: block;
     padding: 1rem 0;
 }
+.sub .salon .post-list .is-notice {
+    color: #f14668 !important;
+}
 
 .sub .salon .post-content>.category {
     font-size: 12px;

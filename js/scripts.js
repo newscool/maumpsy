@@ -135,18 +135,21 @@ $(function () {
         return false;
     })
 
-    // datepicker 모바일 키보드 미출력
-    $("[data-toggle='datepicker']").attr('readonly', 'readonly');
+    if ($("[data-toggle='datepicker']").length) {
+        // datepicker 모바일 키보드 미출력
+        $("[data-toggle='datepicker']").attr('readonly', 'readonly');
 
-    // datepicker 셋팅
-    $('[data-toggle="datepicker"]').datepicker({
-        autoHide: true,
-        autoPick: true,
-        format: 'yyyy-mm-dd',
-        yearSuffix: '년',
-        yearFirst: true,
-        months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
-    });
+        // datepicker 셋팅
+        $('[data-toggle="datepicker"]').datepicker({
+            autoHide: true,
+            autoPick: true,
+            format: 'yyyy-mm-dd',
+            yearSuffix: '년',
+            yearFirst: true,
+            months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+        });
+    }
+    
 })
 
 // header: 모바일 fixed
