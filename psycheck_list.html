@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>마음사이</title>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- 네비게이션 -->
+        <div class="container">
+            <a class="page-prev is-hidden-tablet">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <div class="logo">
+                <a href="" class="is-hidden-mobile">
+                    <img src="./img/logo.png" alt="마음사이">
+                </a>
+                <div class="mobile-current-title is-hidden-tablet">심리체크</div>
+            </div>
+            <nav class="menu is-hidden-mobile">
+                <ul class="main-menu">
+                    <li>
+                        <a href="">
+                            <span>
+                                마음,<b>들여다보기</b>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_1.png" alt="">
+                                    <span>심리체크</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_2.png" alt="">
+                                    <span>그림검사</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_3.png" alt="">
+                                    <span>마음설명서</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>
+                                마음,<b>나누기</b>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_4.png" alt="">
+                                    <span>고민상담</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_5.png" alt="">
+                                    <span>토닥토닥</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_6.png" alt="">
+                                    <span>마음쌀롱</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_7.png" alt="">
+                                    <span>마음사이TV</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>
+                                오후4시,<b>잠깐의 여유</b>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_8.png" alt="">
+                                    <span>마음공감</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_9.png" alt="">
+                                    <span>감사일기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_title_10.png" alt="">
+                                    <span>힐링음악</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="util is-hidden-mobile">
+                <a href="">로그인</a>
+                <a href="">회원가입</a>
+            </nav>
+            <a class="hamberger is-hidden-tablet">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <aside class="mobile-menu is-hidden-tablet">
+        <div class="container">
+            <div class="header">
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="https://randomuser.me/api/portraits/men/52.jpg">
+                    </div>
+                    <dl>
+                        <dt class="name">홍길동 <span>님</span></dt>
+                        <dd class="login-message">위로와 공감으로 마음을 나눠주세요</dd>
+                        <dd class="links">
+                            <a href="">회원정보 수정</a>
+                            <a href="">로그아웃</a>
+                        </dd>
+                    </dl>
+                </div>
+                <a class="close-mobile-menu">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+
+            <nav>
+                <ul class="menu-3">
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_1.png">
+                            </div>
+                            <span>심리체크</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_2.png">
+                            </div>
+                            <span>그림검사</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_3.png">
+                            </div>
+                            <span>마음설명서</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-4">
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_4.png">
+                            </div>
+                            <span>고민상담</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_5.png">
+                            </div>
+                            <span>토닥토닥</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_6.png">
+                            </div>
+                            <span>마음쌀롱</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_7.png">
+                            </div>
+                            <span>마음사이TV</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-3">
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_8.png">
+                            </div>
+                            <span>마음공감</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_9.png">
+                            </div>
+                            <span>감사일기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_title_10.png">
+                            </div>
+                            <span>힐링음악</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-3">
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_wecaning_1.png">
+                            </div>
+                            <span>W-TAP</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_wecaning_2.png">
+                            </div>
+                            <span>W-TPI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="image">
+                                <img src="./img/icon_wecaning_3.png">
+                            </div>
+                            <span>W-API</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <a href="">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="">이용규칙</a>
+                    </li>
+                    <li>
+                        <a href="">광고제휴문의</a>
+                    </li>
+                    <li>
+                        <a href="">문의하기</a>
+                    </li>
+                    <li>
+                        <a href="">공지사항</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slogan">
+                마음과 마음을 이어주는 <b>마음사이</b>
+            </div>
+        </div>
+    </aside>
+
+    <main class="sub">
+
+        <!-- 심리체크 -->
+        <section class="psy-check">
+            <div class="container">
+                <div class="main-title">
+                    <img src="./img/icon_title_1.png" alt="심리체크">
+                    <h2>
+                        <span>심리체크</span>
+                    </h2>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="">홈</a>
+                        </li>
+                        <li>
+                            <a href="">마음, 들여다보기</a>
+                        </li>
+                        <li class="current">
+                            <span>심리체크</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bar">
+                    <ul class="psy-check-list">
+                        <li class="is-active"><a href="">전체</a></li>
+                        <li><a href="">스트레스</a></li>
+                        <li><a href="">불면증</a></li>
+                        <li><a href="">무기력</a></li>
+                        <li><a href="">행복감</a></li>
+                        <li><a href="">우울감</a></li>
+                        <li><a href="">가치관</a></li>
+                        <li><a href="">흡연(금연)</a></li>
+                        <li><a href="">음주(금주)</a></li>
+                        <li><a href="">불안</a></li>
+                        <li><a href="">마음건강</a></li>
+                        <li><a href="">마음읽기</a></li>
+                        <li><a href="">자존감</a></li>
+                        <li><a href="">회피</a></li>
+                        <li><a href="">회피</a></li>
+                        <li><a href="">회피</a></li>
+                    </ul>
+                </div>
+
+                <ul class="post-list">
+                    <li>
+                        <a href="">
+                            <div class="thumbnail">
+                                <img
+                                    src="https://images.unsplash.com/photo-1503525537183-c84679c9147f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                            <ul class="post-content">
+                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
+                                <li class="keyword">#스트레스 #폭식</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="thumbnail">
+                                <img
+                                    src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                            <ul class="post-content">
+                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
+                                <li class="keyword">#스트레스 #폭식</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="thumbnail">
+                                <img
+                                    src="https://images.unsplash.com/photo-1536960242068-96914a09214c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                            <ul class="post-content">
+                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
+                                <li class="keyword">#스트레스 #폭식</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="thumbnail">
+                                <img
+                                    src="https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                            <ul class="post-content">
+                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
+                                <li class="keyword">#스트레스 #폭식</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="thumbnail">
+                                <img
+                                    src="https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            </div>
+                            <ul class="post-content">
+                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
+                                <li class="keyword">#스트레스 #폭식</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="buttons is-centered">
+                    <a href="" class="button">더 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 풀사이즈 가로 배너 -->
+        <section class="fullwidth-banner">
+            <div class="container">
+                <a href="">
+                    <img src="./img/bottom_banner.png" alt="">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="foot-menu">
+                <nav>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이용규칙</a>
+                    <a href="">광고제휴</a>
+                    <a href="">문의</a>
+                    <a href="">공지</a>
+                </nav>
+            </div>
+            <div class="foot-content">
+                <div class="left">
+                    <div class="foot-logo">
+                        <img src="./img/logo.png" alt="마음사이">
+                    </div>
+                    <dl class="foot-info">
+                        <dt>주식회사 위캔엘티디.</dt>
+                        <dd><b>대표</b>이승훈</dd>
+                        <dd><b>개인정보관리자</b>김철수</dd>
+                        <dd><b>주소</b>경기도 안양시 동안구 학의로 282 금강펜테리움IT타워 411호</dd>
+                        <dd><b>사업자등록번호</b>114-81-16397</dd>
+                        <dd><b>통신판매신고번호</b>제 C 2014-00567호</dd>
+                    </dl>
+                </div>
+                <div class="right">
+                    <div class="link">
+                        <div class="related-site">
+                            <span>관련사이트</span>
+                            <i class="fas fa-angle-up"></i>
+                            <ul class="site-list">
+                                <li>
+                                    <a href="http://wecanltd.com" target="_blank">위캔엘티디</a>
+                                </li>
+                                <li>
+                                    <a href="">마음사이 심리센터</a>
+                                </li>
+                                <li>
+                                    <a href="https://smartstore.naver.com/wecaning/products/4909564887"
+                                        target="_blank">W-TAP 검사</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="sns">
+                            <li>
+                                <a href="">
+                                    <img src="./img/icon_sns_instagram.png" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/wecanltd" target="_blank">
+                                    <img src="./img/icon_sns_facebook.png" alt="페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/wecanstory" taget="_blank">
+                                    <img src="./img/icon_sns_blog.png" alt="블로그">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="partner">
+                        <dl>
+                            <dt>협력사</dt>
+                            <dd>
+                                <img src="./img/partner_1.png" alt="엘지 유플러스 아이들나라">
+                            </dd>
+                            <dd>
+                                <img src="./img/partner_2.png" alt="네이버 부모아이">
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">&copy; 마음사이</div>
+        </div>
+        <div class="go-top"></div>
+    </footer>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
