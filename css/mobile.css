@@ -995,6 +995,37 @@
         margin-right: 0 !important;
     }
 
+    .board .page-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .board .field-board {
+        width: 100%;
+    }
+
+    .board .field-board .buttons .button {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .board .board-list li {
+        font-size: 13px;
+    }
+
+    .board .board-detail .header dt {
+        font-size: 1.1rem;
+    }
+    .board .board-detail .header dd {
+        font-size: 12px;
+    }
+    .board .board-detail .board-content {
+        font-size: 14px;
+    }
+
+    .pagination-list {
+        flex-wrap: nowrap;
+    }
 
 
     .tabs li {

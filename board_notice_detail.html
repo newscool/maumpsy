@@ -25,7 +25,7 @@
                 <a href="" class="is-hidden-mobile">
                     <img src="./img/logo.png" alt="마음사이">
                 </a>
-                <div class="mobile-current-title is-hidden-tablet">탈퇴신청</div>
+                <div class="mobile-current-title is-hidden-tablet">공지사항</div>
             </div>
             <nav class="menu is-hidden-mobile">
                 <ul class="main-menu">
@@ -294,63 +294,25 @@
 
     <main class="sub">
 
-        <!-- 탈퇴신청 -->
-        <section class="account">
+        <!-- 공지사항 -->
+        <section class="board">
             <div class="container">
-                <div class="page-title">
-                    <h1 class="font-serif">탈퇴사유를 알려주세요.</h1>
+
+                <div class="board-detail">
+                    <dl class="header">
+                        <dt>1/1(수) 전체사이트 리뉴얼 진행합니다.</dt>
+                        <dd>2020.08.01</dd>
+                    </dl>
+                    <div class="board-content">
+                        <p>마음사이 런칭 1주년을 맞아 새로운 디자인으로 리뉴얼을 진행합니다. 페이지 작업이 이루어 지는 작업시간 동안에는 접속이 원활하지 않을 수 있사오니 양해 부탁드리며, 가능한 빠른시간내에 작업을 마칠 수 있도록 하겠습니다.</p>
+                        <p>새해 복 많이 받으세요. 마음지기 올림</p>
+                    </div>
                 </div>
 
-                <div class="field-withdraw">
-
-                    <div class="field">
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="answer">
-                                서비스 미사용
-                            </label>
-                        </div>
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="answer">
-                                사용빈도가 낮아서
-                            </label>
-                        </div>
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="answer">
-                                원하는 컨텐츠가 없어서
-                            </label>
-                        </div>
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="answer">
-                                서비스 이용불편
-                            </label>
-                        </div>
-                        <div class="control">
-                            <label class="radio">
-                                <input type="radio" name="answer">
-                                기타
-                            </label>
-                            <textarea class="textarea" placeholder="직접입력"></textarea>
-                            <div class="limit">
-                                <span class="current">0</span>/<span class="target">300</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="message is-danger">
-                        <div class="message-body">
-                            <p>탈퇴시 기존 아이디로는 재가입이 되지 않습니다. 작성하신 게시물은 탈퇴 후에도 삭제되지 않으오니 삭제를 원하시는 경우에는 반드시 게시물을 먼저 삭제하신 후 탈퇴신청하여 주세요.</p>
-                        </div>
-                    </div>
-
-                    <div class="buttons is-centered">
-                        <a href="" class="button is-danger button-withdraw">탈퇴신청</a>
-                    </div>
-
+                <div class="buttons is-centered">
+                    <a href="" class="button">목록으로 이동</a>
                 </div>
+
             </div>
         </section>
 
@@ -445,31 +407,9 @@
         <div class="go-top"></div>
     </footer>
 
-    <!-- modal: 탈퇴신청 -->
-    <div class="modal modal-withdraw is-small">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-                <p>탈퇴신청이 완료되었습니다.</p>
-                <div class="buttons is-centered">
-                    <a href="" class="button button-modal-close is-dark">확인</a>
-                </div>
-            </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/scripts.js"></script>
-        <script>
-            $(function () {
-                $(".button-withdraw").click(function (e) {
-                    e.preventDefault();
-                    $(".modal-withdraw").addClass("is-active");
-                })
-            })
-        </script>
 
 </body>
 

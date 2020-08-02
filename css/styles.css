@@ -1325,12 +1325,12 @@ header .util a:last-of-type {
     text-align: center;
 }
 
-.sub .diary .checkbox {
+.sub .checkbox {
     display: flex;
     align-items: center;
 }
 
-.sub .diary .checkbox input {
+.sub .checkbox input {
     margin-right: 5px;
 }
 
@@ -1554,6 +1554,7 @@ header .util a:last-of-type {
     margin-top: 20px;
     text-align: center;
 }
+
 .account .slogan::after,
 .account .page-title::after {
     display: block;
@@ -1575,18 +1576,22 @@ header .util a:last-of-type {
 .account .buttons {
     margin-top: 30px;
 }
+
 .account .buttons-etc {
     display: flex;
     justify-content: space-between;
 }
+
 .account .buttons-etc a {
     font-size: 14px;
     line-height: 1;
 }
+
 .account .buttons-etc .find {
     display: flex;
     align-items: center;
 }
+
 .account .buttons-etc .find .separate {
     margin: 0 10px;
     width: 1px;
@@ -1619,6 +1624,7 @@ header .util a:last-of-type {
     align-items: center;
     font-size: 13px;
 }
+
 .account .field-login .checkbox input {
     margin-right: 5px;
 }
@@ -1628,6 +1634,7 @@ header .util a:last-of-type {
     width: 500px;
     margin: 30px auto 0;
 }
+
 .account .field-register .text-box {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -1636,10 +1643,12 @@ header .util a:last-of-type {
     font-size: 13px;
     white-space: pre-line;
 }
+
 .account .field-register .checkbox {
     display: flex;
     align-items: center;
 }
+
 .account .field-register .checkbox input {
     margin-right: 5px;
 }
@@ -1655,11 +1664,13 @@ header .util a:last-of-type {
     width: 500px;
     margin: 2rem auto;
 }
+
 .account .account-complete img {
     width: 250px;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
 .account .account-complete h2 {
     font-size: 1.5rem;
     word-break: keep-all;
@@ -1667,9 +1678,11 @@ header .util a:last-of-type {
     line-height: 1.3;
     margin: 0 auto 1rem;
 }
-.account .account-complete h2 + p {
+
+.account .account-complete h2+p {
     color: #999;
 }
+
 .account .box p {
     margin: .5rem 0;
 }
@@ -1682,18 +1695,22 @@ header .util a:last-of-type {
     overflow: hidden;
     cursor: pointer;
 }
+
 .account .user-info .profile img {
     width: 100%;
 }
+
 .account .user-info dt {
     font-weight: 600;
     cursor: pointer;
 }
+
 .account .user-info-list li {
     border: 1px solid #eee;
     margin-bottom: .5rem;
     border-radius: 4px;
 }
+
 .account .user-info-list a,
 .account .user-info-list .is-static {
     display: flex;
@@ -1702,27 +1719,33 @@ header .util a:last-of-type {
     padding: 1rem;
     font-size: .9rem;
 }
+
 .account .user-info-list label {
     display: flex;
     align-items: center;
     padding: 1rem;
     font-size: .9rem;
 }
+
 .account .user-info-list .checkbox span {
     color: #999;
 }
-.account .user-info-list .checkbox input:checked + span {
+
+.account .user-info-list .checkbox input:checked+span {
     color: #000;
 }
+
 .account .user-info-list dt {
     display: flex;
     align-items: center;
     color: #000;
 }
+
 .account .user-info-list dt .number {
     font-size: 13px;
     margin-left: 5px;
 }
+
 .account .user-info-list dd {
     color: #999;
 }
@@ -1731,9 +1754,11 @@ header .util a:last-of-type {
     flex-direction: column;
     margin-bottom: .4rem;
 }
+
 .account .textarea {
     margin-top: 5px;
 }
+
 .account .limit {
     font-size: 12px;
 }
@@ -1762,7 +1787,96 @@ header .util a:last-of-type {
     white-space: pre-line;
 }
 
+.etc .buttons {
+    margin-top: 30px;
+}
 
+/* board */
+.board h1 {
+    font-size: 1.8rem;
+}
+
+.board .page-title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.board .field-board {
+    width: 500px;
+    margin: 30px auto 0;
+}
+
+.board .field-board .textarea {
+    height: 300px;
+}
+
+.board .limit {
+    font-size: 12px;
+}
+
+.board .text-box {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    height: 200px;
+    overflow-y: scroll;
+    font-size: 13px;
+    white-space: pre-line;
+}
+
+.board .buttons {
+    margin-top: 30px;
+}
+
+.board .board-list {
+    border-top: 1px solid #eee;
+}
+
+.board .board-list li a {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem .5rem;
+    border-bottom: 1px solid #eee;
+}
+.board .board-list .board-title {
+    padding-right: 20px;
+}
+.board .board-list .board-date {
+    color: #999;
+}
+
+.board .pagination {
+    margin-top: 30px;
+}
+
+.board .board-detail {
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+.board .board-detail .header {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.board .board-detail .header dt {
+    font-size: 1.3rem;
+    color: #000;
+}
+.board .board-detail .header dd {
+    color: #999;
+}
+.board .board-detail .board-content {
+    padding: 1rem;
+}
+.board .board-detail .board-content p {
+    margin: 1rem 0;
+}
+
+/* field */
+.field:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
 
 /* tab */
 
@@ -2011,9 +2125,11 @@ footer .go-top.is-active {
 .modal.is-small .modal-content {
     width: 300px;
 }
+
 .modal-profile .profile .file {
     justify-content: center;
 }
+
 .modal-profile .profile img {
     display: block;
     width: 80px;
