@@ -356,7 +356,7 @@ header .util a:last-of-type {
     margin-bottom: 100px;
 }
 
-.sub>section {
+.sub>section:not(.fullwidth-banner) {
     margin-bottom: 60px;
 }
 
@@ -684,6 +684,7 @@ header .util a:last-of-type {
     height: 0;
     margin-bottom: 2rem;
 }
+
 .post-detail .youtube iframe {
     position: absolute;
     top: 0;
@@ -704,6 +705,7 @@ header .util a:last-of-type {
     margin-right: 15px;
     line-height: 1;
 }
+
 .post-detail .header .subject .info div b {
     color: #333;
 }
@@ -1070,6 +1072,7 @@ header .util a:last-of-type {
     margin-top: 3px;
     word-break: keep-all;
 }
+
 .sub .post-content>.tags {
     color: #48c774;
     font-size: .8rem;
@@ -1204,6 +1207,7 @@ header .util a:last-of-type {
     display: block;
     padding: 1rem 0;
 }
+
 .sub .salon .post-list .is-notice {
     color: #f14668 !important;
 }
@@ -1243,31 +1247,37 @@ header .util a:last-of-type {
     margin: 0;
     border-top: 1px solid #eee;
 }
+
 .sub .phrase .post-list>li,
 .sub .diary .post-list>li {
     width: 100%;
     border-bottom: 1px solid #eee;
     margin: 0;
 }
+
 .sub .phrase .post-list>li a,
 .sub .diary .post-list>li a {
     display: block;
     padding: .6rem 0;
 }
+
 .sub .phrase .post-content,
 .sub .diary .post-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .sub .phrase .post-content>.info,
 .sub .diary .post-content>.info {
     margin: 0;
 }
+
 .sub .phrase .post-detail .body {
     text-align: center;
     margin: 70px 0;
 }
+
 .sub .phrase .post-detail .phrase-body {
     font-family: 'Nanum Myeongjo', serif;
     letter-spacing: -1px;
@@ -1277,17 +1287,20 @@ header .util a:last-of-type {
     width: 80%;
     margin: 0 auto;
 }
+
 .sub .phrase .post-detail .phrase-author {
     font-style: italic;
     margin-top: 10px;
     color: #999;
 }
+
 .sub .phrase .post-detail .phrase-author::before,
 .sub .phrase .post-detail .phrase-author::after {
     display: inline-block;
     content: "-";
     margin: 0 5px;
 }
+
 .sub .phrase .post-detail .share {
     margin: 20px 0;
 }
@@ -1296,22 +1309,27 @@ header .util a:last-of-type {
 .sub .diary .post-content>.subject {
     margin: 0;
 }
+
 .sub .diary .post-content>.subject .date {
     display: inline-block;
     width: 80px;
     color: #999;
 }
+
 .sub .diary .post-content>.subject i {
     color: #ccc;
 }
+
 .sub .diary .post-content>.info .date {
     width: 66px;
     text-align: center;
 }
+
 .sub .diary .checkbox {
     display: flex;
     align-items: center;
 }
+
 .sub .diary .checkbox input {
     margin-right: 5px;
 }
@@ -1320,14 +1338,17 @@ header .util a:last-of-type {
 .sub .psy-check .post-content .subject {
     margin-top: .8rem;
 }
+
 .sub .psy-check .post-content .keyword {
     color: #f14668;
 }
+
 .sub .psy-check.is-detail .container {
     width: 100%;
     max-width: 100%;
     margin: 0;
 }
+
 .sub .psy-check .check-detail .header {
     position: relative;
     overflow: hidden;
@@ -1336,12 +1357,15 @@ header .util a:last-of-type {
     text-align: center;
     padding: 7rem 3rem;
 }
+
 .sub .psy-check .check-detail .header .text {
     color: #fff;
 }
+
 .sub .psy-check .check-detail .header .keywords {
     margin-bottom: .5rem;
 }
+
 .sub .psy-check .check-detail .header .title {
     font-size: 2rem;
     color: #fff;
@@ -1349,6 +1373,7 @@ header .util a:last-of-type {
     line-height: 1.2;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .sub .psy-check .check-detail .header .image {
     position: absolute;
     top: 0;
@@ -1359,11 +1384,13 @@ header .util a:last-of-type {
     -webkit-filter: blur(3px);
     transform: scale(1.2);
 }
+
 .sub .psy-check .check-detail .header .image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 .sub .psy-check .check-detail .header .image::before {
     position: absolute;
     top: 0;
@@ -1372,25 +1399,31 @@ header .util a:last-of-type {
     bottom: 0;
     display: block;
     content: '';
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
 .sub .psy-check .check-detail .body {
     width: 800px;
     margin: 2rem auto;
 }
+
 .sub .psy-check .check-detail .body p {
     margin-bottom: 1rem;
 }
+
 .sub .psy-check .check-detail .body .buttons {
     margin-top: 2rem;
 }
+
 .sub .psy-check.is-complete .content {
     text-align: center;
 }
+
 .sub .psy-check.is-complete .content img {
     border-radius: 50%;
     width: 250px;
 }
+
 .sub .psy-check.is-complete .content h2 {
     text-align: center;
     font-weight: normal;
@@ -1403,6 +1436,7 @@ header .util a:last-of-type {
     width: 800px;
     margin: 50px auto 0;
 }
+
 .test .testItem {
     position: relative;
     border: 1px solid #ccc;
@@ -1509,6 +1543,226 @@ header .util a:last-of-type {
     margin-right: 5px;
 }
 
+/* account */
+.account .field-login {
+    width: 300px;
+    margin: 30px auto 0;
+}
+
+.account .slogan,
+.account .page-title {
+    margin-top: 20px;
+    text-align: center;
+}
+.account .slogan::after,
+.account .page-title::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #eee;
+    margin: 30px auto;
+}
+
+.account .slogan p {
+    color: #999;
+}
+
+.account h1 {
+    font-size: 1.8rem;
+}
+
+.account .buttons {
+    margin-top: 30px;
+}
+.account .buttons-etc {
+    display: flex;
+    justify-content: space-between;
+}
+.account .buttons-etc a {
+    font-size: 14px;
+    line-height: 1;
+}
+.account .buttons-etc .find {
+    display: flex;
+    align-items: center;
+}
+.account .buttons-etc .find .separate {
+    margin: 0 10px;
+    width: 1px;
+    height: 15px;
+    border-left: 1px solid #ddd;
+}
+
+.button.is-naver {
+    border: none;
+    background-color: #1FC700;
+    color: #fff;
+    background-image: url('../img/login_icon_naver.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
+}
+
+.button.is-kakao {
+    border: none;
+    background-color: #F7E317;
+    color: #000;
+    background-image: url('../img/login_icon_kakao.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
+}
+
+.account .field-login .checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.account .field-login .checkbox input {
+    margin-right: 5px;
+}
+
+.account .field-register,
+.account .field-withdraw {
+    width: 500px;
+    margin: 30px auto 0;
+}
+.account .field-register .text-box {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    height: 200px;
+    overflow-y: scroll;
+    font-size: 13px;
+    white-space: pre-line;
+}
+.account .field-register .checkbox {
+    display: flex;
+    align-items: center;
+}
+.account .field-register .checkbox input {
+    margin-right: 5px;
+}
+
+.account .message {
+    margin-top: 2rem;
+    /* width: 400px; */
+    margin: 1.5rem auto;
+}
+
+.account .account-complete {
+    text-align: center;
+    width: 500px;
+    margin: 2rem auto;
+}
+.account .account-complete img {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.account .account-complete h2 {
+    font-size: 1.5rem;
+    word-break: keep-all;
+    width: 400px;
+    line-height: 1.3;
+    margin: 0 auto 1rem;
+}
+.account .account-complete h2 + p {
+    color: #999;
+}
+.account .box p {
+    margin: .5rem 0;
+}
+
+.account .user-info .profile {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.account .user-info .profile img {
+    width: 100%;
+}
+.account .user-info dt {
+    font-weight: 600;
+    cursor: pointer;
+}
+.account .user-info-list li {
+    border: 1px solid #eee;
+    margin-bottom: .5rem;
+    border-radius: 4px;
+}
+.account .user-info-list a,
+.account .user-info-list .is-static {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: .9rem;
+}
+.account .user-info-list label {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: .9rem;
+}
+.account .user-info-list .checkbox span {
+    color: #999;
+}
+.account .user-info-list .checkbox input:checked + span {
+    color: #000;
+}
+.account .user-info-list dt {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+.account .user-info-list dt .number {
+    font-size: 13px;
+    margin-left: 5px;
+}
+.account .user-info-list dd {
+    color: #999;
+}
+
+.account .field-withdraw .control {
+    flex-direction: column;
+    margin-bottom: .4rem;
+}
+.account .textarea {
+    margin-top: 5px;
+}
+.account .limit {
+    font-size: 12px;
+}
+
+
+/* etc */
+.etc h1 {
+    font-size: 1.8rem;
+}
+
+.etc .page-title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.etc .page-title::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #eee;
+    margin: 30px auto;
+}
+
+.etc .content {
+    white-space: pre-line;
+}
+
+
 
 /* tab */
 
@@ -1524,21 +1778,21 @@ header .util a:last-of-type {
 
 
 /* message */
-.message {
-    padding: 1.2rem;
+.sub .message {
     font-size: 12px;
 }
 
-.message ul {
+.sub .message ul {
     margin-left: 1rem;
+    padding: 1.2rem;
 }
 
-.message li {
+.sub .message li {
     list-style: disc;
     margin-bottom: .3rem;
 }
 
-.message li:last-of-type {
+.sub .message li:last-of-type {
     margin-bottom: 0;
 }
 
@@ -1756,4 +2010,14 @@ footer .go-top.is-active {
 
 .modal.is-small .modal-content {
     width: 300px;
+}
+.modal-profile .profile .file {
+    justify-content: center;
+}
+.modal-profile .profile img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
 }
