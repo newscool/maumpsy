@@ -989,6 +989,15 @@
         width: 100%;
     }
 
+    .account .test-list {
+        width: 100%;
+    }
+    .account .test-list + .buttons .button {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     .etc .buttons .button {
         width: 100%;
         margin-left: 0 !important;
@@ -1022,6 +1031,41 @@
     .board .board-detail .board-content {
         font-size: 14px;
     }
+
+    .account .check-detail .header {
+        padding: 3rem !important;
+    }
+    .account .check-detail .body .graph .comment {
+        font-size: 1.4rem;
+    }
+    .account .check-detail .post-list {
+        margin: 0 !important;
+    }
+    .account .check-detail .post-list > li {
+        padding: 0;
+    }
+    .account .check-detail .post-list > li .post-content {
+        margin-left: 0 !important;
+    }
+    .account .check-detail .post-list > li .post-content .keyword {
+        margin-bottom: 2px;
+        margin-top: 0;
+        font-size: 11px;
+    }
+    .account .check-detail .post-list > li .post-content .subject {
+        font-size: 15px;
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .account .check-detail .post-list > li .post-content .info {
+        font-size: 11px;
+        margin: 0;
+        margin-top: 7px;
+    }
+
+    
 
     .pagination-list {
         flex-wrap: nowrap;

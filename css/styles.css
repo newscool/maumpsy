@@ -1364,6 +1364,7 @@ header .util a:last-of-type {
 
 .sub .psy-check .check-detail .header .keywords {
     margin-bottom: .5rem;
+    font-size: 1rem;
 }
 
 .sub .psy-check .check-detail .header .title {
@@ -1571,6 +1572,7 @@ header .util a:last-of-type {
 
 .account h1 {
     font-size: 1.8rem;
+    line-height: 1.2;
 }
 
 .account .buttons {
@@ -1763,6 +1765,182 @@ header .util a:last-of-type {
     font-size: 12px;
 }
 
+.account .test-list {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.account .test-list li a {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.account .test-list .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account .test-list .body .date {
+    color: #999;
+    font-size: 13px;
+}
+
+.account .test-list .body .test-title {
+    color: #000;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.account .test-list .body .keyword {
+    color: #48c774;
+    font-size: 13px;
+}
+
+.account .test-list .body .info {
+    display: flex;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #999;
+}
+
+.account .test-list .body .info .author {
+    margin-right: 15px;
+}
+
+.account .test-list .body .info .like i {
+    color: #f14668;
+    margin-right: 3px;
+}
+
+.account .test-list .body .thumbnail {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.account .test-list .body .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account .check-detail .header {
+    padding: 5rem 3rem !important;
+}
+
+.account .check-detail .header .info {
+    display: flex;
+    justify-content: center;
+}
+
+.account .check-detail .header .info .author {
+    margin-right: 15px;
+}
+
+.account .check-detail .header .info .like i {
+    color: #f14668;
+    margin-right: 3px;
+}
+
+.account .check-detail .body h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: left;
+}
+
+.account .check-detail .body hr {
+    margin: 2.5rem 0;
+}
+
+.account .check-detail .body .graph {
+    text-align: center;
+}
+
+.account .check-detail .body .graph .circle {
+    background-color: #eee;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.account .check-detail .body .graph .circle.color-0 {
+    background: rgb(67, 110, 219);
+    background: linear-gradient(18deg, rgba(67, 110, 219, 1) 0%, rgba(45, 208, 212, 1) 100%);
+}
+
+.account .check-detail .body .graph .circle.color-1 {
+    background: rgb(86, 188, 66);
+    background: linear-gradient(18deg, rgba(86, 188, 66, 1) 0%, rgba(224, 216, 29, 1) 100%);
+}
+
+.account .check-detail .body .graph .circle.color-2 {
+    background: rgb(237, 132, 32);
+    background: linear-gradient(18deg, rgba(237, 132, 32, 1) 0%, rgba(224, 216, 29, 1) 100%);
+}
+
+.account .check-detail .body .graph .circle .score {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+.account .check-detail .body .graph .circle .grade {
+    line-height: 1;
+    color: #fff;
+}
+
+.account .check-detail .body .graph .bar {
+    position: relative;
+    border: 2px solid #ccc;
+    width: 180px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    padding: 3px;
+}
+
+.account .check-detail .body .graph .bar-body {
+    background-color: #000;
+    width: 50%;
+    height: 15px;
+    content: "";
+    border-radius: 20px;
+}
+
+.account .check-detail .body .graph .bar .grade-text {
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account .check-detail .body .graph .bar .grade-text span {
+    display: block;
+    font-size: 12px;
+}
+
+.account .check-detail .body .graph .comment {
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+
 
 /* etc */
 .etc h1 {
@@ -1839,9 +2017,11 @@ header .util a:last-of-type {
     padding: .7rem .5rem;
     border-bottom: 1px solid #eee;
 }
+
 .board .board-list .board-title {
     padding-right: 20px;
 }
+
 .board .board-list .board-date {
     color: #999;
 }
@@ -1855,23 +2035,29 @@ header .util a:last-of-type {
     border-top: 2px solid #000;
     border-bottom: 1px solid #000;
 }
+
 .board .board-detail .header {
     padding: 1rem;
     border-bottom: 1px solid #eee;
 }
+
 .board .board-detail .header dt {
     font-size: 1.3rem;
     color: #000;
 }
+
 .board .board-detail .header dd {
     color: #999;
 }
+
 .board .board-detail .board-content {
     padding: 1rem;
 }
+
 .board .board-detail .board-content p {
     margin: 1rem 0;
 }
+
 
 /* field */
 .field:not(:last-child) {
