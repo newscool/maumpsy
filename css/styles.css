@@ -454,12 +454,14 @@ header .util a:last-of-type {
 
 .main .post-list {
     display: flex;
+    margin: 0 -1rem;
 }
 
 .main .post-list li {
     position: relative;
-    width: 32%;
-    margin-right: 2.5%;
+    width: 25%;
+    padding: 1rem;
+    /* margin-right: 2.5%; */
 }
 
 .main .post-list li:last-of-type {
@@ -483,7 +485,7 @@ header .util a:last-of-type {
 .main .post-list li .tag {
     position: absolute;
     top: 10px;
-    left: -10px;
+    left: 3px;
     font-size: 1rem;
     color: #fff;
     z-index: 1;
@@ -501,13 +503,17 @@ header .util a:last-of-type {
     background-color: #37A2E6;
 }
 
+.main .post-list li:nth-of-type(4) .tag {
+    background-color: #8a50d6;
+}
+
 .main .post-list li dl {
     padding: .8rem;
 }
 
 .main .post-list li dt {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
     font-weight: 600;
 }
 
@@ -536,10 +542,12 @@ header .util a:last-of-type {
 
 .main .share-heart .content-list {
     display: flex;
+    margin: 0 -1rem;
 }
 
 .main .share-heart .content-list li {
-    margin-right: 2.5%;
+    /* margin-right: 2.5%; */
+    margin: 1rem;
     width: 25%;
     border-radius: 10px;
     overflow: hidden;

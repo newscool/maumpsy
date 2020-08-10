@@ -150,7 +150,7 @@
             </div>
 
             <nav>
-                <ul class="menu-3">
+                <ul>
                     <li>
                         <a href="">
                             <div class="image">
@@ -176,7 +176,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="menu-4">
+                <ul>
                     <li>
                         <a href="">
                             <div class="image">
@@ -210,7 +210,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="menu-3">
+                <ul>
                     <li>
                         <a href="">
                             <div class="image">
@@ -236,13 +236,13 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="menu-3">
+                <ul class="sub-check">
                     <li>
                         <a href="">
                             <div class="image">
                                 <img src="./img/icon_wecaning_1.png">
                             </div>
-                            <span>W-TAP</span>
+                            <span>아동검사 3 in 1<b>W-TAP</b></span>
                         </a>
                     </li>
                     <li>
@@ -250,7 +250,7 @@
                             <div class="image">
                                 <img src="./img/icon_wecaning_2.png">
                             </div>
-                            <span>W-TPI</span>
+                            <span>아동검사시리즈</span>
                         </a>
                     </li>
                     <li>
@@ -258,7 +258,7 @@
                             <div class="image">
                                 <img src="./img/icon_wecaning_3.png">
                             </div>
-                            <span>W-API</span>
+                            <span>자기주도학습능력검사<b>W-SAT</b></span>
                         </a>
                     </li>
                 </ul>
@@ -479,7 +479,7 @@
                     </h2>
                 </div>
 
-                <ul class="manual-list">
+                <ul class="post-list">
                     <li>
                         <a href="">
                             <div class="tag">애착의존</div>
@@ -504,6 +504,25 @@
                             <div class="tag">애착의존</div>
                             <div class="photo">
                                 <img src="./img/temp_photo_2.jpg">
+                            </div>
+                            <dl>
+                                <dt>애착 의존을 보이는 사람들</dt>
+                                <dd>둘째 아이가 태어나면서 첫째 아이에게 상처만 주고 좋은 엄마가 돼 주지 못하는 것 같아 고민인 전업맘의 이야기입니다.</dd>
+                                <dd class="info">
+                                    <span class="date">2020.06.01</span>
+                                    <span class="like">
+                                        <i class="fas fa-heart"></i>
+                                        <span>44</span>
+                                    </span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="tag">애착의존</div>
+                            <div class="photo">
+                                <img src="./img/temp_photo_3.jpg">
                             </div>
                             <dl>
                                 <dt>애착 의존을 보이는 사람들</dt>
@@ -664,7 +683,7 @@
                             <div class="image">
                                 <img src="./img/icon_wecaning_1.png">
                             </div>
-                            <span class="name">자기주도학습검사 <b>W-SAT</b></span>
+                            <span class="name">아동검사 3 in 1 <b>W-TAP</b></span>
                             <span class="link">검사</span>
                         </a>
                     </li>
@@ -673,7 +692,7 @@
                             <div class="image">
                                 <img src="./img/icon_wecaning_2.png">
                             </div>
-                            <span class="name">기질·부모검사 <b>W-API</b></span>
+                            <span class="name">아동검사시리즈</span>
                             <span class="link">검사</span>
                         </a>
                     </li>
@@ -682,7 +701,7 @@
                             <div class="image">
                                 <img src="./img/icon_wecaning_3.png">
                             </div>
-                            <span class="name">적성·부모검사 <b>W-TPI</b></span>
+                            <span class="name">자기주도학습능력검사 <b>W-SAT</b></span>
                             <span class="link">검사</span>
                         </a>
                     </li>
@@ -801,8 +820,14 @@
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                on: {
+                    init: function() {
+                        this.slideNext();
+                    }
+                }
             });
         }
+       
     </script>
 </body>
 

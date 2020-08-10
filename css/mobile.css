@@ -130,8 +130,7 @@
 
     .mobile-menu .header {
         display: flex;
-        justify-content: space-between;
-        padding: 20px 15px;
+        padding: 20px 30px;
         background-color: #5caade;
         margin-bottom: 20px;
     }
@@ -145,11 +144,11 @@
     }
 
     .mobile-menu .header .user-info .avatar {
-        width: 70px;
-        height: 70px;
-        border-radius: 70px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
         overflow: hidden;
-        margin-right: 12px;
+        margin-right: 15px;
     }
 
     .mobile-menu .header .user-info .avatar img {
@@ -190,6 +189,9 @@
     }
 
     .mobile-menu .close-mobile-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -205,13 +207,22 @@
     }
 
     .mobile-menu nav {
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .mobile-menu nav ul {
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mobile-menu nav ul:not(:last-of-type) {
+        border-bottom: 1px solid #eee;
+    }
+    .mobile-menu nav ul:last-of-type {
+        margin-bottom: 0;
     }
 
     .mobile-menu nav ul li {
@@ -232,18 +243,55 @@
     .mobile-menu nav ul li span {
         font-size: .8rem;
     }
+    .mobile-menu nav ul.sub-check {
+        flex-direction: column !important;
+        /* justify-content: center !important; */
+        margin: 25px 0;
+        padding-bottom: 0;
+    }
+    .mobile-menu nav ul.sub-check li {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mobile-menu nav ul.sub-check a {
+        display: flex;
+        align-items: center;
+        background-color: #f6f6f6;
+        padding: 10px 15px;
+        margin-bottom: 7px;
+        border-radius: 4px;
+    }
+    .mobile-menu nav ul.sub-check li:last-of-type a {
+        margin-bottom: 0;
+    }
+    .mobile-menu nav ul.sub-check a .image {
+        margin: 0;
+        margin-right: 7px;
+    }
+    .mobile-menu nav ul.sub-check a img {
+        height: 30px;
+        width: 30px;
+    }
+    .mobile-menu nav ul.sub-check a span {
+        font-size: 15px;
+        color: #777;
+    }
+    .mobile-menu nav ul.sub-check a span b {
+        margin-left: 5px;
+    }
 
     .mobile-menu .bottom ul {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         display: grid;
-        padding: 15px 50px;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
     }
 
     .mobile-menu .bottom a {
-        font-size: .8rem;
-        color: #555;
+        font-size: 12px;
+        color: #777;
     }
 
     .mobile-menu .slogan {
@@ -378,6 +426,10 @@
     .image-test .image-list li {
         width: auto;
         margin: 0;
+        border-radius: 7px;
+    }
+    .image-test .image-list li:nth-of-type(n+5) {
+        display: none;
     }
 
     .image-test .image-list li span {
@@ -399,24 +451,25 @@
     }
 
     .main .post-list {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .main .post-list li {
         width: 100%;
-        margin-bottom: 30px;
     }
-
-    .main .post-list li:last-of-type {
-        margin-bottom: 0;
+    .main .post-list li:nth-of-type(n+2) {
+        display: none;
     }
 
     .main .post-list li dl {
-        padding-bottom: 0;
+        padding: 0;
+        margin-top: 1rem;
     }
 
     .main .post-list li dt {
         font-size: 1rem;
+        line-height: 1.4;
     }
 
     .main .post-list li dd {
@@ -426,17 +479,33 @@
 
     .main .post-list li .tag {
         font-size: .7rem;
+        left: 8px;
+    }
+    .main .post-list li .photo {
+        border-radius: 6px;
+        height: 140px;
+        padding-top: 0;
+    }
+    .main .post-list li img {
+        position: relative;
+        top: unset;
+        transform: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 
     .main .share-heart .content-list {
+        padding: 15px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        gap: 1rem;
     }
 
     .main .share-heart .content-list li {
         width: 100%;
+        margin: 0;
     }
 
     .main .share-heart .content-list li dl dt {
