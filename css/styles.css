@@ -623,6 +623,47 @@ header .util a:last-of-type {
     margin: 0 auto;
 }
 
+/* etc-content */
+.main .etc-content .content-list {
+    display: flex;
+    margin: 80px -1rem;
+}
+
+.main .etc-content .content-list li {
+    margin: 1rem;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.main .etc-content .content-list li a {
+    display: flex;
+    align-items: center;
+}
+
+.main .etc-content .content-list li a img {
+    width: 150px;
+}
+
+.main .etc-content .content-list div {
+    margin-left: 2rem;
+}
+
+.main .etc-content .content-list h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.main .etc-content .content-list p {
+    color: #999;
+    text-align: left;
+    padding-right: 50px;
+    word-break: keep-all;
+}
+
 /* fullwidth banner */
 .fullwidth-banner .container {
     max-width: 100%;
@@ -664,6 +705,11 @@ header .util a:last-of-type {
     border-left: 3px solid #eee;
     padding-left: 1rem;
     color: #000;
+}
+.top-bar .description p:last-child {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    color: #999;
 }
 
 /* post */
@@ -1094,7 +1140,8 @@ header .util a:last-of-type {
     position: relative;
 }
 
-.sub .is-consulting .thumbnail .running-time {
+.sub .is-consulting .thumbnail .running-time,
+.sub .is-edu .thumbnail .running-time {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -1438,6 +1485,107 @@ header .util a:last-of-type {
     font-weight: normal;
     margin: 1rem 0 0 0;
     line-height: 1.2;
+}
+
+/* edu */
+.sub .edu .post-list .subject {
+    margin-top: 10px;
+}
+
+.sub .edu .post-list .desc {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* statistic */
+.sub .statistic .question {
+    margin-bottom: 50px;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.sub .statistic .question h3 {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.sub .statistic .question h3 i {
+    margin-right: 5px;
+}
+
+.sub .statistic .question ul {
+    display: flex;
+}
+
+.sub .statistic .question ul li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 170px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #888;
+}
+
+.sub .statistic .question ul li img {
+    display: block;
+    width: 35px;
+    margin-right: 7px;
+    filter: grayscale(1);
+    opacity: .3;
+}
+
+.sub .statistic .question ul li.is-active {
+    background-color: #57C3C3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sub .statistic .question ul li.is-active img {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.sub .statistic .result-list-1,
+.sub .statistic .result-list-2 {
+    display: none;
+}
+
+.sub .statistic .result-list-1.is-active,
+.sub .statistic .result-list-2.is-active {
+    display: flex;
+}
+.sub .statistic .statistic-title li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #000;
+}
+.sub .statistic .statistic-title li:last-child {
+    margin-bottom: 0;
+}
+.sub .statistic .statistic-title b {
+    display: inline-block;
+    width: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 10px;
+    padding: 3px 5px;
 }
 
 /* test */
@@ -1801,6 +1949,7 @@ header .util a:last-of-type {
     color: #000;
     margin-top: 5px;
     line-height: 1.4;
+    padding-right: 20px;
 }
 
 .account .test-list .body .keyword {

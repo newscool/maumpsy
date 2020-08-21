@@ -320,7 +320,13 @@
     }
 
     .top-bar .description {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        word-break: keep-all;
+        line-height: 1.3;
+    }
+
+    .top-bar .description p:last-child {
+        margin-top: 5px;
     }
 
     .main .swiper-container {
@@ -533,6 +539,37 @@
         font-size: .7rem;
     }
 
+    .main .etc-content {
+        margin-top: 3rem;
+        margin-bottom: 0 !important;
+    }
+    .main .etc-content .content-list {
+        flex-direction: column;
+        margin: 0;
+    }
+    .main .etc-content .content-list li {
+        width: 100%;
+        margin: 0 0 1rem;
+        border-radius: 5px;
+    }
+    .main .etc-content .content-list li:last-child {
+        margin-bottom: 0;
+    }
+    .main .etc-content .content-list li img {
+        width: 100px !important;
+    }
+    .main .etc-content .content-list li div {
+        margin-left: 1.2rem;
+    }
+    .main .etc-content .content-list li h3 {
+        font-size: 1rem;
+    }
+    .main .etc-content .content-list li p {
+        margin-top: 5px;
+        font-size: 11px;
+        padding-right: 1rem;
+    }
+
     .post-detail,
     .post-write {
         padding: 0;
@@ -741,7 +778,7 @@
 
     .sub .consulting .info,
     .sub .tv .info {
-        margin-top: 0 !important;
+        /* margin-top: 0 !important; */
     }
 
     .sub .tv .info {
@@ -970,6 +1007,34 @@
 
     .sub .psy-check .test {
         width: 100%;
+    }
+
+    .sub .edu .post-list .subject {
+        margin-top: 0;
+    }
+    .sub .edu .post-detail .info {
+        margin-top: 10px !important;
+    }
+
+    .sub .statistic .question {
+        flex-direction: column;
+    }
+    .sub .statistic .question h3 {
+        flex-direction: column;
+        font-size: 14px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .sub .statistic .question h3 i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .sub .statistic .question-item {
+        width: 100%;
+    }
+    .sub .statistic .question-item li {
+        flex-direction: column;
+        width: 50% !important;
     }
 
     .test .testItem {
