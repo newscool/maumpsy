@@ -1557,13 +1557,28 @@ header .util a:last-of-type {
     filter: grayscale(0);
 }
 
-.sub .statistic .result-list-1,
-.sub .statistic .result-list-2 {
+.sub .statistic-list {
+    flex-wrap: wrap;
     display: none;
 }
+.sub .statistic-list li {
+    width: 20%;
+}
+.sub .statistic-list a {
+    display: block;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.sub .statistic-list a img {
+    display: block;
+    width: 50px;
+    margin: 0 auto 10px;
+}
 
-.sub .statistic .result-list-1.is-active,
-.sub .statistic .result-list-2.is-active {
+.sub .statistic-list.is-active {
     display: flex;
 }
 .sub .statistic .statistic-title li {

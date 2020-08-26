@@ -334,73 +334,85 @@
                 </div>
 
                 <!-- 첫번째 리스트 -->
-                <ul class="post-list result-list-1">
+                <ul class="statistic-list">
                     <li>
                         <a href="">
-                            <div class="thumbnail">
-                                <img
-                                    src="https://images.unsplash.com/photo-1503525537183-c84679c9147f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <ul class="post-content">
-                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
-                                <li class="keyword">#스트레스 #폭식</li>
-                            </ul>
+                            <img src="./img/icon_statistic_1.png">
+                            <span>기질</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <div class="thumbnail">
-                                <img
-                                    src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <ul class="post-content">
-                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
-                                <li class="keyword">#스트레스 #폭식</li>
-                            </ul>
+                            <img src="./img/icon_statistic_2.png">
+                            <span>적성</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <div class="thumbnail">
-                                <img
-                                    src="https://images.unsplash.com/photo-1536960242068-96914a09214c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <ul class="post-content">
-                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
-                                <li class="keyword">#스트레스 #폭식</li>
-                            </ul>
+                            <img src="./img/icon_statistic_3.png">
+                            <span>부모</span>
                         </a>
                     </li>
                 </ul>
-                
+
                 <!-- 두번째 리스트 -->
-                <ul class="post-list result-list-2">
+                <ul class="statistic-list">
                     <li>
                         <a href="">
-                            <div class="thumbnail">
-                                <img
-                                    src="https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <ul class="post-content">
-                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
-                                <li class="keyword">#스트레스 #폭식</li>
-                            </ul>
+                            <img src="./img/icon_statistic_4.png">
+                            <span>진로성향</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <div class="thumbnail">
-                                <img
-                                    src="https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <ul class="post-content">
-                                <li class="subject">화나는 일이 있으면 자꾸 먹을 걸 찾게돼요</li>
-                                <li class="keyword">#스트레스 #폭식</li>
-                            </ul>
+                            <img src="./img/icon_statistic_5.png">
+                            <span>동기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_6.png">
+                            <span>대인환경</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_7.png">
+                            <span>자존감</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_8.png">
+                            <span>학습전략</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_9.png">
+                            <span>스트레스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_10.png">
+                            <span>학습부적응</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_11.png">
+                            <span>정서행동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/icon_statistic_3.png">
+                            <span>부모</span>
                         </a>
                     </li>
                 </ul>
-               
+
             </div>
         </section>
 
@@ -499,19 +511,17 @@
     <script src="./js/swiper.min.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
-
-        $(function() {
+        $(function () {
             // 질문 클릭시 해당 리스트 노출
-            $(".question-item li").click(function() {
+            $(".question-item li").click(function () {
                 var _index = $(this).index();
                 $(".question-item li").removeClass("is-active");
                 $(this).addClass("is-active");
 
-                $(".post-list").removeClass("is-active");
-                $(".post-list").eq(_index).addClass("is-active")
+                $(".statistic-list").removeClass("is-active");
+                $(".statistic-list").eq(_index).addClass("is-active")
             })
         })
-
     </script>
 
 </body>
