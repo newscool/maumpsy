@@ -90,7 +90,7 @@
 
     .index header .logo {
         flex-basis: auto;
-        height: 16px;
+        height: 28px;
     }
 
     header .logo {
@@ -453,7 +453,7 @@
         border-radius: 7px;
     }
     .image-test .image-list li:nth-of-type(n+5) {
-        display: none;
+        /* display: none; */
     }
 
     .image-test .image-list li span {
@@ -1281,7 +1281,7 @@
     .footer .foot-content .foot-info dt,
     .footer .foot-content .foot-info dd {
         display: inline-block;
-        font-size: .65rem;
+        font-size: 11px;
     }
 
     .footer .right {

@@ -23,7 +23,11 @@
             </a>
             <div class="logo">
                 <a href="">
-                    <img src="./img/logo.png" alt="마음사이">
+                    <picture>
+                        <source srcset="./img/logo_mobile.png" media="(max-width: 400px)">
+                        <source srcset="./img/logo.png">
+                        <img src="./img/logo.png" alt="마음사이">
+                    </picture>
                 </a>
             </div>
             <nav class="menu is-hidden-mobile">
@@ -311,7 +315,7 @@
             <div class="container">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a href="" class="swiper-slide">
+                        <a href="" class="swiper-slide bg-1">
                             <dl>
                                 <dt>부모역할 만족도</dt>
                                 <dd class="emoji">
@@ -323,7 +327,7 @@
                                 <dd class="desc">자녀가 성장해 가는 모습을 가까이서 지켜보는 것은 부모만이 가질 수 있는 권리이자 행복입니다.</dd>
                             </dl>
                         </a>
-                        <a href="" class="swiper-slide">
+                        <a href="" class="swiper-slide bg-2">
                             <dl>
                                 <dt>애착 안정성</dt>
                                 <dd class="emoji">
@@ -334,7 +338,7 @@
                                 <dd class="desc">자녀가 성장해 가는 모습을 가까이서 지켜보는 것은 부모만이 가질 수 있는 권리이자 행복입니다.</dd>
                             </dl>
                         </a>
-                        <a href="" class="swiper-slide">
+                        <a href="" class="swiper-slide bg-3">
                             <dl>
                                 <dt>유아 스트레스</dt>
                                 <dd class="emoji">
@@ -345,7 +349,7 @@
                                 <dd class="desc">자녀가 성장해 가는 모습을 가까이서 지켜보는 것은 부모만이 가질 수 있는 권리이자 행복입니다.</dd>
                             </dl>
                         </a>
-                        <a href="" class="swiper-slide">
+                        <a href="" class="swiper-slide bg-4">
                             <dl>
                                 <dt>자기 성찰</dt>
                                 <dd class="emoji">
@@ -356,7 +360,7 @@
                                 <dd class="desc">자녀가 성장해 가는 모습을 가까이서 지켜보는 것은 부모만이 가질 수 있는 권리이자 행복입니다.</dd>
                             </dl>
                         </a>
-                        <a href="" class="swiper-slide">
+                        <a href="" class="swiper-slide bg-5">
                             <dl>
                                 <dt>일-가족 갈등 척도</dt>
                                 <dd class="emoji">
@@ -766,7 +770,11 @@
             <div class="foot-content">
                 <div class="left">
                     <div class="foot-logo">
-                        <img src="./img/logo.png" alt="마음사이">
+                        <picture>
+                            <source srcset="./img/logo_mobile.png" media="(max-width: 400px)">
+                            <source srcset="./img/logo.png">
+                            <img src="./img/logo.png" alt="마음사이">
+                        </picture>
                     </div>
                     <dl class="foot-info">
                         <dt>주식회사 위캔엘티디.</dt>
@@ -842,6 +850,7 @@
                     delay: 5000,
                 },
                 centeredSlides: true,
+                loop: true,
                 slidesPerView: 'auto',
                 spaceBetween: 30,
                 speed: 700,
