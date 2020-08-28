@@ -720,8 +720,8 @@ header .util a:last-of-type {
 
 .post-detail .images,
 .post-write .images {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     margin-bottom: 2rem;
 }
 
