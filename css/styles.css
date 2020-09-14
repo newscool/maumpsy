@@ -1433,6 +1433,7 @@ header .util a:last-of-type {
 .sub .psy-check .check-detail .header .image {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     z-index: -1;
@@ -1871,6 +1872,8 @@ header .util a:last-of-type {
 
 .account .user-info .profile img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .account .user-info dt {
