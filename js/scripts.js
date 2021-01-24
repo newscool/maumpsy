@@ -117,6 +117,15 @@ $(function () {
         })
     }
 
+    // 위캐닝 스타트 자녀 버튼 클릭
+    if ($(".children-list").length) {
+        $(".children-list .button").click(function(e) {
+            e.preventDefault();
+            $(".children-list .button").removeClass('is-link');
+            $(this).addClass('is-link');
+        })
+    }
+
     // footer: 관련 사이트 액션
     $(".related-site").click(function () {
         $(this).toggleClass("is-active");

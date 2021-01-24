@@ -241,7 +241,7 @@
     }
 
     .mobile-menu nav ul li span {
-        font-size: .8rem;
+        font-size: .75rem;
     }
     .mobile-menu nav ul.sub-check {
         flex-direction: column !important;
@@ -280,11 +280,12 @@
         margin-left: 5px;
     }
     .mobile-menu nav ul.statistic li {
-        width: 40% !important;
+        width: 100% !important;
     }
     .mobile-menu nav ul.statistic li a {
         display: flex;
         align-items: center;
+        justify-content: center;
         word-break: keep-all;
     }
     .mobile-menu nav ul.statistic li img {
@@ -321,6 +322,10 @@
 
     .mobile-menu .slogan b {
         color: #000;
+    }
+
+    .mobile-menu .goods-banner {
+        font-size: 0;
     }
 
     .sub .main-title {

@@ -78,6 +78,10 @@ header .main-menu>li:nth-of-type(3) b {
     color: #F0AA4A;
 }
 
+header .main-menu>li:nth-of-type(4) b {
+    color: #8d62e4;
+}
+
 header .main-menu>li>a b {
     margin-left: 5px;
 }
@@ -2497,4 +2501,12 @@ footer .go-top.is-active {
     height: 80px;
     border-radius: 50%;
     margin: 0 auto 10px;
+}
+
+.notification ol li {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.notification ol li:last-of-type {
+    margin-bottom: 0;
 }
