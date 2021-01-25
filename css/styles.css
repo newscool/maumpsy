@@ -710,6 +710,7 @@ header .util a:last-of-type {
     padding-left: 1rem;
     color: #000;
 }
+
 .top-bar .description p:last-child {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
@@ -1566,9 +1567,11 @@ header .util a:last-of-type {
     flex-wrap: wrap;
     display: none;
 }
+
 .sub .statistic-list li {
     width: 20%;
 }
+
 .sub .statistic-list a {
     display: block;
     border: 1px solid #ddd;
@@ -1577,6 +1580,7 @@ header .util a:last-of-type {
     border-radius: 5px;
     text-align: center;
 }
+
 .sub .statistic-list a img {
     display: block;
     width: 50px;
@@ -1586,15 +1590,18 @@ header .util a:last-of-type {
 .sub .statistic-list.is-active {
     display: flex;
 }
+
 .sub .statistic .statistic-title li {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
     color: #000;
 }
+
 .sub .statistic .statistic-title li:last-child {
     margin-bottom: 0;
 }
+
 .sub .statistic .statistic-title b {
     display: inline-block;
     width: 70px;
@@ -2507,6 +2514,187 @@ footer .go-top.is-active {
     font-size: .9rem;
     margin-bottom: .5rem;
 }
+
 .notification ol li:last-of-type {
     margin-bottom: 0;
+}
+
+/* wecaning start */
+.wecaning-start .page-title {
+    margin-top: 3rem;
+}
+
+.wecaning-start .page-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.wecaning-start .page-title h1 img {
+    width: 45px;
+    margin-right: 5px;
+}
+
+.wecaning-start .page-title h1 b {
+    margin-right: 10px;
+}
+
+.wecaning-start .page-title p {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+}
+
+.wecaning-start .page-title::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #eee;
+    margin: 30px auto;
+}
+
+.wecaning-start .due-date {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wecaning-start .mission {
+    padding-top: 3rem;
+    border-top: 2px solid #eee;
+    margin: 3rem 0;
+}
+
+.wecaning-start .mission textarea {
+    height: 150px;
+}
+
+.wecaning-start .mission-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    word-break: keep-all;
+    text-align: center;
+}
+
+.wecaning-start .mission-title .icon {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.wecaning-start .mission .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wecaning-start .mission .rating .question {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.wecaning-start .mission .rating .starrr {
+    margin-top: .3rem;
+    font-size: 1.5rem;
+}
+
+.wecaning-start .mission .rating .starrr a {
+    color: #ff780e;
+}
+
+.wecaning-start .mission .rating p {
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: #ff780e;
+}
+
+.wecaning-start h2 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    color: #333;
+}
+
+.wecaning-start .purchase a {
+    display: flex;
+    /* background-color: #f6f6f6; */
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.wecaning-start .purchase img {
+    display: block;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.wecaning-start .purchase .text {
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+}
+
+.wecaning-start .purchase .text sup {
+    color: #777;
+}
+
+.wecaning-start .rate {
+    margin-bottom: 2rem;
+}
+
+.wecaning-start .rate li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 0;
+}
+
+.wecaning-start .rate li span {
+    width: 50px;
+    font-weight: 600;
+}
+
+.wecaning-start .rate li span.name {
+    width: 40px;
+}
+
+.wecaning-start .rate li .progress {
+    width: calc(100% - 110px) !important;
+    margin: 0;
+}
+
+.box {
+    border: 1px solid #f2f2f2;
+}
+
+.table th {
+    text-align: center !important;
+    font-size: 12px;
+}
+
+.table.is-history th:nth-child(1) {
+    width: 30%;
+}
+
+.table.is-history th:nth-child(2) {
+    width: 40%;
+}
+
+.table.is-history th:nth-child(3) {
+    width: 30%;
+}
+
+.table td {
+    text-align: center !important;
+    vertical-align: middle;
+    font-size: 13px;
 }

@@ -126,6 +126,16 @@ $(function () {
         })
     }
 
+    // 미션 점수
+    if ($(".starrr").length) {
+        $(".starrr").starrr({
+            change: function(e, value) {
+                const rating = value * 20;
+                e.currentTarget.parentNode.querySelector('p').innerHTML = '<b>'+rating+'%</b> 달성하였습니다!';
+            }
+        });
+    }
+
     // footer: 관련 사이트 액션
     $(".related-site").click(function () {
         $(this).toggleClass("is-active");
