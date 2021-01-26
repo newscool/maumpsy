@@ -467,6 +467,9 @@ header .util a:last-of-type {
     padding: 1rem;
     /* margin-right: 2.5%; */
 }
+.main .post-list.is-3 li {
+    width: 33%;
+}
 
 .main .post-list li:last-of-type {
     margin-right: 0;
@@ -551,15 +554,11 @@ header .util a:last-of-type {
 
 .main .share-heart .content-list li {
     /* margin-right: 2.5%; */
-    margin: 1rem;
+    margin: 0 1rem;
     width: 50%;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #eee;
-}
-
-.main .share-heart .content-list li:last-of-type {
-    margin-right: 0;
 }
 
 .main .share-heart .content-list li .photo {
@@ -1147,6 +1146,7 @@ header .util a:last-of-type {
 }
 
 .sub .is-consulting .thumbnail .running-time,
+.main .running-time,
 .sub .is-edu .thumbnail .running-time {
     position: absolute;
     bottom: 10px;
@@ -2724,4 +2724,84 @@ footer .go-top.is-active {
     text-align: center !important;
     vertical-align: middle;
     font-size: 13px;
+}
+
+.wecaning-start-main-visual {
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.wecaning-start-main-visual .subject {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 14vw;
+}
+.wecaning-start-main-visual .subject sup {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+.wecaning-start-main-visual .subject h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.wecaning-start-main-visual .subject .button {
+    width: 330px;
+}
+.banner {
+    margin: 100px 0;
+}
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+.movie-about {
+    margin: 100px 0;
+}
+.movie-about .container {
+    background-color: #f4f6f8;
+    padding: 5rem 8rem;
+}
+.movie-about .movie {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.movie-about .movie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.movie-about .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.movie-about .text img {
+    width: 150px;
+    margin-right: 2rem;
+}
+.movie-about .text .desc sup {
+    font-size: 1.2rem;
+    line-height: .7;
+    color: #6a829b;
+}
+.movie-about .text .desc h2 {
+    margin-top: 8px;
+    font-size: 2.9rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #0057b5;
+    letter-spacing: -2px;
 }
