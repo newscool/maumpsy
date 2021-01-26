@@ -119,7 +119,7 @@ $(function () {
 
     // 위캐닝 스타트 자녀 버튼 클릭
     if ($(".children-list").length) {
-        $(".children-list .button").click(function(e) {
+        $(".children-list .button").click(function (e) {
             e.preventDefault();
             $(".children-list .button").removeClass('is-link');
             $(this).addClass('is-link');
@@ -129,11 +129,31 @@ $(function () {
     // 미션 점수
     if ($(".starrr").length) {
         $(".starrr").starrr({
-            change: function(e, value) {
-                const rating = value * 20;
-                e.currentTarget.parentNode.querySelector('p').innerHTML = '<b>'+rating+'%</b> 달성하였습니다!';
+            change: function (e, value) {
+                const rating = (value ? value : 0) * 20;
+                e.currentTarget.parentNode.querySelector('p').innerHTML = '<b>' + rating + '%</b> 달성하였습니다!';
             }
         });
+    }
+
+    // 미션 내용 글자 수
+    if ($(".text-limit").length) {
+        // 최대 입력 값
+        const LIMIT = 2000;
+
+        $(".text-limit").each(function() {
+            const textarea = $(this).parent().find('textarea');
+            const limit = $(this).find(".current");
+            $(this).find(".total").text(LIMIT);
+            textarea.on('keyup', function(e) {
+                const length = $(this).val().length;
+                limit.text(length);
+                if (length > LIMIT) {
+                    alert("최대 2000자 까지 입력이 가능합니다.");
+                    limit.css("color", "red");
+                }
+            })
+        })
     }
 
     // footer: 관련 사이트 액션
@@ -149,7 +169,7 @@ $(function () {
     })
 
     // modal: close, background 세팅
-    $(".modal-background, .modal-close, .button-modal-close").click(function() {
+    $(".modal-background, .modal-close, .button-modal-close").click(function () {
         $(this).parents(".modal").removeClass("is-active");
         return false;
     })
@@ -168,7 +188,7 @@ $(function () {
             months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
         });
     }
-    
+
 })
 
 // header: 모바일 fixed
