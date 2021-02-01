@@ -90,7 +90,7 @@ header .sub-menu {
     position: absolute;
     top: 45px;
     left: 20px;
-    width: 180px;
+    width: 220px;
     margin: 0 auto;
     z-index: 99;
     overflow: hidden;
@@ -676,7 +676,7 @@ header .util a:last-of-type {
 
 .fullwidth-banner .container a {
     display: block;
-    background-color: #f4f6f8;
+    background-color: #e5f0fa;
     width: 100%;
 }
 
@@ -2597,25 +2597,32 @@ footer .go-top.is-active {
 }
 
 .wecaning-start .mission-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    word-break: keep-all;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.wecaning-start .mission-title .icon {
+.wecaning-start .mission-title h3 {
     display: flex;
-    justify-content: center;
-    width: 30px;
+    align-items: center;
     font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
-.wecaning-start .mission-title .icon img {
-    flex-shrink: 0;
+.wecaning-start .mission-title img {
+    width: 30px;
+    margin-right: 5px;
+}
+.wecaning-start .mission-title p {
+    margin-top: 5px;
+}
+.wecaning-start .mission-title ol {
+    border-left: 2px solid #ccc;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+.wecaning-start .mission-title ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .wecaning-start .mission .rating {
@@ -2770,12 +2777,14 @@ footer .go-top.is-active {
     background-color: #f4f6f8;
     padding: 5rem 8rem;
 }
-.movie-about .movie {
+.movie-about .movie,
+.smart-parent-life .movie {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
 }
-.movie-about .movie iframe {
+.movie-about .movie iframe,
+.smart-parent-life .movie iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -2804,4 +2813,40 @@ footer .go-top.is-active {
     line-height: 1;
     color: #0057b5;
     letter-spacing: -2px;
+}
+.check-list {
+    margin-bottom: 2rem;
+}
+.next-mission {
+    text-align: center;
+    color: #999;
+}
+.next-mission p.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: #333;
+}
+.next-mission p.next b {
+    color: #2160c4;
+}
+.next-mission p.next img {
+    width: 2rem;
+    margin-right: 8px;
+}
+.smart-banner {
+    background-color: #f5f1e8;
+    margin-bottom: 100px;
+}
+.smart-banner a {
+    display: flex;
+    justify-content: center;
+}
+.smart-banner a img {
+    display: block;
+    max-width: 900px;
+}
+.smart-parent-life {
+    margin-bottom: 100px;
 }

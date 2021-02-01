@@ -1390,4 +1390,10 @@
         display: block;
     }
 
+    .smart-banner a img {
+        display: block;
+        width: 100%;
+        max-width: none !important;
+    }
+
 }
