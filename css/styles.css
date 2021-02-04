@@ -2846,6 +2846,7 @@ footer .go-top.is-active {
 .smart-banner a img {
     display: block;
     max-width: 900px;
+    align-self: center;
 }
 .smart-parent-life {
     margin-bottom: 100px;
