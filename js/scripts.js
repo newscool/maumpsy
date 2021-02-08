@@ -205,8 +205,10 @@ $(window).scroll(function () {
     // 스크롤 500이상 시 최상단 이동 버튼 생성
     if (topScroll >= 500) {
         $(".go-top").addClass("is-active");
+        $(".go-button").addClass("is-active");
     } else {
         $(".go-top").removeClass("is-active");
+        $(".go-button").removeClass("is-active");
     }
 
 })

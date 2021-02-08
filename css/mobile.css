@@ -1345,15 +1345,18 @@
     }
     .wecaning-start-main-visual .subject sup {
         font-size: .9rem;
+        text-align: center;
     }
     .wecaning-start-main-visual .subject h1 {
         font-size: 3rem;
-        margin-bottom: 10rem;
+        margin-bottom: 30vw;
         letter-spacing: -2px;
     }
     .wecaning-start-main-visual .subject .button {
         width: auto;
-        padding: 0 40px;
+        padding: 10px 20px;
+        height: 40px;
+        margin-bottom: 10px !important;
     }
 
     .banner {
@@ -1371,16 +1374,17 @@
     }
     .movie-about .text {
         line-height: 1;
+        margin-bottom: 2rem;
     }
     .movie-about .text img {
-        width: 80px;
+        width: 70px;
         margin-right: 1rem;
     }
     .movie-about .text .desc span {
         font-size: .7rem;
     }
     .movie-about .text .desc h2 {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .main .post-list.is-3 li {
@@ -1394,6 +1398,22 @@
         display: block;
         width: 100%;
         max-width: none !important;
+    }
+
+    .go-button {
+        bottom: 20px;
+        right: 20px;
+    }
+    .go-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #f4763c;
+        font-size: 12px;
     }
 
 }
